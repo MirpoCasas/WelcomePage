@@ -1,0 +1,282 @@
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+.bar{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 5vh;
+  background-color: #3271a5 ;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+}
+
+.navbutton > a:link{
+  color: white;
+  text-decoration: none;
+}
+.navbutton > a:visited{
+  color: white;
+  text-decoration: none;
+}
+.navbutton > a:hover{
+  color: white;
+  text-decoration: none;
+}
+.navbutton > a:active{
+  color: white;
+  text-decoration: none;
+}
+
+.navbutton{
+  padding: 10px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #235284 ;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-family: 'Cairo', sans-serif;
+}
+
+.Intro {
+  display: flex;
+  font-family: 'Cairo', sans-serif;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.Intro > img{
+  width: 50vw;
+  height: 50vh;
+}
+
+
+.Description{
+  background-color: #4194cb ;
+  color: white;
+  width: 30vw;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 3vw;
+  font-size: smaller;
+  
+
+}
+
+.Description > ul{
+  padding-inline-start: 10px;
+}
+
+.firstPartMe{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: #143E69
+}
+
+.firstPartMe > img{
+  width: 30vw;
+  height: 30vw;
+}
+
+.secondPartMe{
+  background-color: #4194cb    ;
+  height: 100vh;
+}
+
+.secondPartMe > h2{
+  margin: 50px;
+  margin-top: 0;
+}
+
+
+.Techs{
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #58afdd  ;
+  border-radius: 100px;
+  padding: 30px;
+  color: white;
+}
+
+.preTech{
+  display: flex;
+  align-items: center;
+}
+
+
+
+.Techs > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Techs > div > img{
+  width: 5vw;
+  height: 5vw;
+}
+
+#techModel{
+  height: 50vh;
+  width: 50vw;
+}
+
+#courses{
+  padding: 5px;
+}
+
+.CourseList{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projects{
+  background-color: #ADE8F4;
+}
+
+.projects-array{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.projects-array> div{
+  background-color: #0077B6;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.postProject{
+  display: flex;
+}
+
+.postProject > img{
+  width: 30vw;
+  height: 30vw;
+}
+
+.socials{
+  padding: 5px;
+  background-color: #3C6691 ;
+  height: 50vh;
+  color: white;
+}
+
+.socials > h2{
+  margin-top: 0;
+}
+
+.socialCont {
+  display: flex;
+  
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socialCont > img{
+  width: 35vh ;
+  height: 35vh;
+  text-align: right;
+}
+
+.socialLinks > a:link{
+  color: white;
+}
+.socialLinks > a:hover{
+  color: grey;
+}
+.socialLinks > a:visited{
+  color: burlywood;
+}
+
+
+ /* CARD SECTION */
+
+
+
+.cards {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+ 
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+ 
+.card .card-link-wrapper {
+  margin-top: auto;
+}
+ 
+.cards::-webkit-scrollbar {
+  height: 12px;
+}
+ 
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+ 
+.cards::-webkit-scrollbar-thumb {
+  background: var(--darkred);
+}
+ 
+.cards::-webkit-scrollbar-track {
+  background: var(--thumb);
+}
+ 
+@media (min-width: 500px) {
+  .card {
+    flex-basis: calc(50% - 10px);
+  }
+ 
+  .card:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+ 
+@media (min-width: 700px) {
+  .card {
+    flex-basis: calc(calc(100% / 3) - 20px);
+  }
+ 
+  .card:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+ 
+@media (min-width: 1100px) {
+  .card {
+    flex-basis: calc(25% - 30px);
+  }
+ 
+  .card:not(:last-child) {
+    margin-right: 40px;
+  }
+}
