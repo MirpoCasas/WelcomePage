@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/WelcomePage/static/css/main.6af37982.css",
+    "main.js": "/WelcomePage/static/js/main.cbd1ca64.js",
+    "static/js/787.8675c87a.chunk.js": "/WelcomePage/static/js/787.8675c87a.chunk.js",
+    "static/media/IMG_20211130_144047_251.jpg": "/WelcomePage/static/media/IMG_20211130_144047_251.85d7236bab5f24e33ac4.jpg",
+    "static/media/python.png": "/WelcomePage/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/atom.png": "/WelcomePage/static/media/atom.8de031158034160f496d.png",
+    "static/media/sass.png": "/WelcomePage/static/media/sass.c5da83bb9ff45b84e0e7.png",
+    "static/media/github.png": "/WelcomePage/static/media/github.d3263084234dc705b2ae.png",
+    "static/media/Attribution modeling.svg": "/WelcomePage/static/media/Attribution modeling.f47b185e70b1bebb8dceacf06d4f3daf.svg",
+    "static/media/Social Communication.svg": "/WelcomePage/static/media/Social Communication.061636a0923658bc5ada3e9ba35c2bd0.svg",
+    "static/media/Data report.svg": "/WelcomePage/static/media/Data report.55f174c369b1f95a6424157f7381090e.svg",
+    "static/media/css-3.png": "/WelcomePage/static/media/css-3.463e319bad8e0edf1ef7.png",
+    "static/media/bootstrap.png": "/WelcomePage/static/media/bootstrap.268c4375260420e8d982.png",
+    "static/media/js.png": "/WelcomePage/static/media/js.3dfb665e058d08c99f28.png",
+    "index.html": "/WelcomePage/index.html",
+    "main.6af37982.css.map": "/WelcomePage/static/css/main.6af37982.css.map",
+    "main.cbd1ca64.js.map": "/WelcomePage/static/js/main.cbd1ca64.js.map",
+    "787.8675c87a.chunk.js.map": "/WelcomePage/static/js/787.8675c87a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6af37982.css",
+    "static/js/main.cbd1ca64.js"
+  ]
+}
