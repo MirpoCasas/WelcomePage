@@ -3,6 +3,7 @@
 }
 
 .bar{
+  font-size: 2em;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -46,7 +47,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 2.5em;
   color: white;
   font-family: 'Cairo', sans-serif;
 }
@@ -71,21 +72,16 @@
   width: 30vw;
   border-radius: 15px;
   padding: 20px;
-  margin: 3vw;
-  font-size: smaller;
-  
+  margin: 3vw;;
 
-}
-
-.Description > ul{
-  padding-inline-start: 10px;
 }
 
 .firstPartMe{
+  font-size: 2em;
   display: flex;
   align-items: center;
   height: 100vh;
-  background-color: #143E69
+  background-color: #143E69;
 }
 
 .firstPartMe > img{
@@ -94,15 +90,23 @@
 }
 
 .secondPartMe{
-  background-color: #4194cb    ;
+  display: flex;
+  flex-direction: column;
+  background-color: #4194cb;
   height: 100vh;
+  font-size: 2em;
+  overflow: auto;
 }
 
 .secondPartMe > h2{
-  margin: 50px;
-  margin-top: 0;
+  overflow: auto;
 }
 
+.preTech{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
 
 .Techs{
   width: 100vw;
@@ -115,13 +119,6 @@
   padding: 30px;
   color: white;
 }
-
-.preTech{
-  display: flex;
-  align-items: center;
-}
-
-
 
 .Techs > div{
   display: flex;
@@ -140,11 +137,11 @@
 }
 
 #courses{
-  padding: 5px;
+  padding: 10px;
 }
 
 .CourseList{
-  
+  font-size: 2em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -179,7 +176,8 @@
 }
 
 .socials{
-  padding: 5px;
+  padding: 10px;
+  font-size: 2em;
   background-color: #3C6691 ;
   height: 50vh;
   color: white;
@@ -191,7 +189,6 @@
 
 .socialCont {
   display: flex;
-  
   flex-direction: row;
   justify-content: space-between;
 }
