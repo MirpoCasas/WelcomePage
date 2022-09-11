@@ -7,12 +7,12 @@ import Me from './Me.js';
 
 function NavBar() {
   return (
-    <div className="bar">
+    <nav className="bar">
       <div className="navbutton"><a href="#me" >Who am I?</a></div>
-      <div className="navbutton"><a href="#courses" >Courses</a></div>
+      <div className="navbutton"><a href="#Courses" >Courses</a></div>
       <div className="navbutton"><a href="#socials" >Contact</a></div>
       <div className="navbutton"><p></p></div>
-    </div>
+    </nav>
   )  
 }
 
@@ -39,24 +39,24 @@ function Courses() {
 
 
   return (
-    <section id="courses">
+    <section id="Courses">
       <div>
         <h1>These are the courses I have worked on.</h1>
         <div className='CourseList'>
         <div>
           <h2>FreeCodeCamp</h2>
             <ul>
-              <li>HTML and CSS</li>
-              <li>Javascript</li>
-              <li>Front End libraries</li>
+              <li>Responsive Web Design - <a target="_blank" rel='noreferrer' href="https://www.freecodecamp.org/certification/Mirpo/responsive-web-design">Credential</a></li>
+              <li>JavaScript Algorithms and Data Structures - <a target="_blank" rel='noreferrer' href="https://www.freecodecamp.org/certification/Mirpo/javascript-algorithms-and-data-structures">Credential</a></li>
+              <li>Front End Development Libraries - <a target="_blank" rel='noreferrer' href="https://freecodecamp.org/certification/Mirpo/front-end-development-libraries">Credential</a></li>
               <li>Python - OnGoing</li>
             </ul>
           </div>
           <div>
             <h2>SoloLearn</h2>
             <ul>
-              <li>Python Core</li>
-              <li>React + Redux</li>
+              <li>Python Core - <a target="_blank" rel='noreferrer' href="https://www.sololearn.com/certificates/course/en/1628071/1073/landscape/png">Credential (png)</a></li>
+              <li>React + Redux - <a target="_blank" rel='noreferrer' href="https://api2.sololearn.com/v2/certificates/CT-XDXCFD4L/image/png">Credential (png)</a></li>
             </ul>
           </div>
           <div>
