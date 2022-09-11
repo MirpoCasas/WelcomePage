@@ -58,11 +58,11 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-}
-
-.Intro > img{
-  width: 50vw;
-  height: 50vh;
+  
+  img{
+    width: 50vw;
+    height: 50vh;
+  }
 }
 
 
@@ -82,11 +82,11 @@
   align-items: center;
   height: 100vh;
   background-color: #143E69;
-}
-
-.firstPartMe > img{
-  width: 30vw;
-  height: 30vw;
+  
+  img{
+   width: 30vw;
+   height: 30vw;
+ }
 }
 
 .secondPartMe{
@@ -96,11 +96,12 @@
   height: 100vh;
   font-size: 2em;
   overflow: auto;
+  
+  h2{
+    overflow: auto;
+  }
 }
-
-.secondPartMe > h2{
-  overflow: auto;
-}
+  
 
 .preTech{
   display: flex;
@@ -118,18 +119,20 @@
   border-radius: 100px;
   padding: 30px;
   color: white;
+  
+  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    img{
+      width: 5vw;
+      height: 5vw;
+    }
+  }
 }
 
-.Techs > div{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.Techs > div > img{
-  width: 5vw;
-  height: 5vw;
-}
 
 #techModel{
   height: 50vh;
@@ -155,25 +158,27 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  
+  div{
+    background-color: #0077B6;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+  }
 }
 
-.projects-array> div{
-  background-color: #0077B6;
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  border-radius: 10px;
-  flex-wrap: wrap;
-}
 
 .postProject{
   display: flex;
+  
+  img{
+    width: 30vw;
+    height: 30vw;
+  }
 }
 
-.postProject > img{
-  width: 30vw;
-  height: 30vw;
-}
 
 .socials{
   padding: 10px;
@@ -181,23 +186,25 @@
   background-color: #3C6691 ;
   height: 50vh;
   color: white;
+  
+  h2{
+    margin-top: 0;
+  }
 }
 
-.socials > h2{
-  margin-top: 0;
-}
 
 .socialCont {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
+  img{
+    width: 35vh ;
+    height: 35vh;
+    text-align: right;
+  }
 }
 
-.socialCont > img{
-  width: 35vh ;
-  height: 35vh;
-  text-align: right;
-}
 
 .socialLinks > a:link{
   color: white;

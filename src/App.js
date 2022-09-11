@@ -1,6 +1,6 @@
 import model1 from './Attribution modeling.svg'
 import socialModel from './icons/Social Communication.svg'
-import './App.css';
+import './App.scss';
 import Me from './Me.js';
 
 

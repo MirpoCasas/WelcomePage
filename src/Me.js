@@ -1,5 +1,7 @@
 import React from 'react';
 import techModel from './icons/Data report.svg'
+import reduxpic from './icons/4691205_redux_icon.png'
+import tailpic from './icons/9080637_brand_tailwind_icon.png'
 import atompic from './icons/atom.png'
 import bootstrappic from './icons/bootstrap.png'
 import csspic from './icons/css-3.png'
@@ -44,6 +46,14 @@ function Me() {
       {
         name: "SASS",
         pic: sasspic
+      },
+      {
+        name: "Redux",
+        pic: reduxpic
+      },
+      {
+        name: "Tailwind",
+        pic: tailpic
       }
     ]
   
