@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WelcomePage/static/css/main.ada12f9f.css",
-    "main.js": "/WelcomePage/static/js/main.f9cd7113.js",
+    "main.css": "/WelcomePage/static/css/main.885e74d5.css",
+    "main.js": "/WelcomePage/static/js/main.82ff75c2.js",
     "static/js/787.8675c87a.chunk.js": "/WelcomePage/static/js/787.8675c87a.chunk.js",
     "static/media/IMG_20211130_144047_251.jpg": "/WelcomePage/static/media/IMG_20211130_144047_251.85d7236bab5f24e33ac4.jpg",
     "static/media/python.png": "/WelcomePage/static/media/python.6a5cbc319ab3ddf8ef92.png",
@@ -17,12 +17,12 @@
     "static/media/js.png": "/WelcomePage/static/media/js.3dfb665e058d08c99f28.png",
     "static/media/9080637_brand_tailwind_icon.png": "/WelcomePage/static/media/9080637_brand_tailwind_icon.3333dc330d8f940d3dfe.png",
     "index.html": "/WelcomePage/index.html",
-    "main.ada12f9f.css.map": "/WelcomePage/static/css/main.ada12f9f.css.map",
-    "main.f9cd7113.js.map": "/WelcomePage/static/js/main.f9cd7113.js.map",
+    "main.885e74d5.css.map": "/WelcomePage/static/css/main.885e74d5.css.map",
+    "main.82ff75c2.js.map": "/WelcomePage/static/js/main.82ff75c2.js.map",
     "787.8675c87a.chunk.js.map": "/WelcomePage/static/js/787.8675c87a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ada12f9f.css",
-    "static/js/main.f9cd7113.js"
+    "static/css/main.885e74d5.css",
+    "static/js/main.82ff75c2.js"
   ]
 }
