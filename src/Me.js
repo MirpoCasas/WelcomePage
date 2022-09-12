@@ -10,7 +10,7 @@ import htmlpic from './icons/html-5.png'
 import pythonpic from './icons/python.png'
 import sasspic from './icons/sass.png'
 import jspic from './icons/js.png'
-import selfie from './icons/IMG_20211130_144047_251.jpg'
+import selfie from './icons/20220911_223943.jpg'
 
 function Me() {
 
