@@ -10,6 +10,7 @@ import htmlpic from './icons/html-5.png'
 import pythonpic from './icons/python.png'
 import sasspic from './icons/sass.png'
 import jspic from './icons/js.png'
+import tspic from './icons/typescript.svg'
 import selfie from './icons/20220911_223943.jpg'
 
 function Me() {
@@ -50,6 +51,10 @@ function Me() {
       {
         name: "Redux",
         pic: reduxpic
+      },
+      {
+        name: "TypeScript",
+        pic: tspic
       },
       {
         name: "Tailwind",
