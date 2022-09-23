@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/WelcomePage/static/css/main.885e74d5.css",
-    "main.js": "/WelcomePage/static/js/main.c8dbbdea.js",
+    "main.css": "/WelcomePage/static/css/main.418bed50.css",
+    "main.js": "/WelcomePage/static/js/main.f9055b8e.js",
     "static/js/787.8675c87a.chunk.js": "/WelcomePage/static/js/787.8675c87a.chunk.js",
     "static/media/20220911_223943.jpg": "/WelcomePage/static/media/20220911_223943.faec0ad05246c2074f96.jpg",
+    "static/media/StackOverflow_Questions.png": "/WelcomePage/static/media/StackOverflow_Questions.7bd64a6ba39899e3128d.png",
     "static/media/python.png": "/WelcomePage/static/media/python.6a5cbc319ab3ddf8ef92.png",
     "static/media/atom.png": "/WelcomePage/static/media/atom.8de031158034160f496d.png",
     "static/media/sass.png": "/WelcomePage/static/media/sass.c5da83bb9ff45b84e0e7.png",
     "static/media/github.png": "/WelcomePage/static/media/github.d3263084234dc705b2ae.png",
     "static/media/Attribution modeling.svg": "/WelcomePage/static/media/Attribution modeling.f47b185e70b1bebb8dceacf06d4f3daf.svg",
     "static/media/Social Communication.svg": "/WelcomePage/static/media/Social Communication.061636a0923658bc5ada3e9ba35c2bd0.svg",
+    "static/media/Light bulb.svg": "/WelcomePage/static/media/Light bulb.262a816851104f01b452e09b48ef2e80.svg",
     "static/media/Data report.svg": "/WelcomePage/static/media/Data report.55f174c369b1f95a6424157f7381090e.svg",
     "static/media/4691205_redux_icon.png": "/WelcomePage/static/media/4691205_redux_icon.280a3357d149cece29da.png",
     "static/media/css-3.png": "/WelcomePage/static/media/css-3.463e319bad8e0edf1ef7.png",
@@ -18,12 +20,12 @@
     "static/media/9080637_brand_tailwind_icon.png": "/WelcomePage/static/media/9080637_brand_tailwind_icon.3333dc330d8f940d3dfe.png",
     "index.html": "/WelcomePage/index.html",
     "static/media/typescript.svg": "/WelcomePage/static/media/typescript.a6305a733dd55243980aec55f96f70c5.svg",
-    "main.885e74d5.css.map": "/WelcomePage/static/css/main.885e74d5.css.map",
-    "main.c8dbbdea.js.map": "/WelcomePage/static/js/main.c8dbbdea.js.map",
+    "main.418bed50.css.map": "/WelcomePage/static/css/main.418bed50.css.map",
+    "main.f9055b8e.js.map": "/WelcomePage/static/js/main.f9055b8e.js.map",
     "787.8675c87a.chunk.js.map": "/WelcomePage/static/js/787.8675c87a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.885e74d5.css",
-    "static/js/main.c8dbbdea.js"
+    "static/css/main.418bed50.css",
+    "static/js/main.f9055b8e.js"
   ]
 }
