@@ -1,4 +1,3 @@
-import React from 'react';
 import techModel from './icons/Data report.svg'
 import reduxpic from './icons/4691205_redux_icon.png'
 import tailpic from './icons/9080637_brand_tailwind_icon.png'
@@ -95,7 +94,7 @@ function Me() {
           <h2>Technologies</h2>
           <div className='preTech'>
             <img alt="techModel" src={techModel} id='techModel' />
-            <div className="Techs">
+            <div className="Techs" id="style-5">
               {techarrdone}
             </div>
           </div>
