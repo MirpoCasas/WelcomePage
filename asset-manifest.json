@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WelcomePage/static/css/main.418bed50.css",
-    "main.js": "/WelcomePage/static/js/main.f9055b8e.js",
+    "main.css": "/WelcomePage/static/css/main.7be13c1a.css",
+    "main.js": "/WelcomePage/static/js/main.7ef68aed.js",
     "static/js/787.8675c87a.chunk.js": "/WelcomePage/static/js/787.8675c87a.chunk.js",
     "static/media/20220911_223943.jpg": "/WelcomePage/static/media/20220911_223943.faec0ad05246c2074f96.jpg",
     "static/media/StackOverflow_Questions.png": "/WelcomePage/static/media/StackOverflow_Questions.7bd64a6ba39899e3128d.png",
@@ -20,12 +20,12 @@
     "static/media/9080637_brand_tailwind_icon.png": "/WelcomePage/static/media/9080637_brand_tailwind_icon.3333dc330d8f940d3dfe.png",
     "index.html": "/WelcomePage/index.html",
     "static/media/typescript.svg": "/WelcomePage/static/media/typescript.a6305a733dd55243980aec55f96f70c5.svg",
-    "main.418bed50.css.map": "/WelcomePage/static/css/main.418bed50.css.map",
-    "main.f9055b8e.js.map": "/WelcomePage/static/js/main.f9055b8e.js.map",
+    "main.7be13c1a.css.map": "/WelcomePage/static/css/main.7be13c1a.css.map",
+    "main.7ef68aed.js.map": "/WelcomePage/static/js/main.7ef68aed.js.map",
     "787.8675c87a.chunk.js.map": "/WelcomePage/static/js/787.8675c87a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.418bed50.css",
-    "static/js/main.f9055b8e.js"
+    "static/css/main.7be13c1a.css",
+    "static/js/main.7ef68aed.js"
   ]
 }
