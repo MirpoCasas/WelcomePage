@@ -8,7 +8,7 @@ export default function Courses() {
       <div>
         <h1>These are the courses I have worked on.</h1>
         <div className='CourseList'>
-          <div>
+          <div className="CourseItem">
             <h2>FreeCodeCamp</h2>
             <ul>
               <li>Responsive Web Design - <a target="_blank" rel='noreferrer' href="https://www.freecodecamp.org/certification/Mirpo/responsive-web-design">Credential</a></li>
@@ -17,14 +17,14 @@ export default function Courses() {
               <li>Python - OnGoing</li>
             </ul>
           </div>
-          <div>
+          <div className="CourseItem">
             <h2>SoloLearn</h2>
             <ul>
               <li>Python Core - <a target="_blank" rel='noreferrer' href="https://www.sololearn.com/certificates/course/en/1628071/1073/landscape/png">Credential (png)</a></li>
               <li>React + Redux - <a target="_blank" rel='noreferrer' href="https://api2.sololearn.com/v2/certificates/CT-XDXCFD4L/image/png">Credential (png)</a></li>
             </ul>
           </div>
-          <div>
+          <div className="CourseItem">
             <h2>Open BootCamp</h2>
             <ul>
               <li>HTML & CSS</li>

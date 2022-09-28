@@ -12,6 +12,7 @@ export default function Socials() {
           <p>My email: mirpocasas@gmail.com</p>
           <p>Phone: +54 9 351 3041288</p>
           <p>I'm open to job offers!</p>
+
         </div>
         <img alt='socialModel' src={socialModel} />
       </div>
