@@ -62,7 +62,7 @@ function Me() {
     ]
   
     const techarrdone = techarr.map((tech) =>
-      <div>
+      <div key={tech.name}>
         <img alt="techpic" src={tech.pic} />
         <p>{tech.name}</p>
       </div>
@@ -70,7 +70,7 @@ function Me() {
   
     return (
         <section id="me" className='Me'>
-            <div className='firstPartMe'>
+        <div className='firstPartMe'>
                 <div className="Description">
                     <h2>Who am I?</h2>
             
@@ -89,7 +89,7 @@ function Me() {
                         <li><p>Basic level portuguese and french</p></li>
                     </ul>
                 </div>
-            </div>
+        </div>
         <div className='secondPartMe'>
           <h2>Technologies</h2>
           <div className='preTech'>

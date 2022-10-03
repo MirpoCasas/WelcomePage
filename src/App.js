@@ -21,18 +21,18 @@ function NavBar() {
 
 function Intro() {
   return (
-    <section id="intro" className="App">
-      <header className="App-header">
+    <section id="intro" className="Start">
+    
         
-        <p>
-          Hi there! Welcome
-        </p>
+      <p>
+        Hi there! Welcome
+      </p>
 
-        <div className="Intro">
-          <p>My name is Martin Casas. I'm a Front-End web developer.</p>
-          <img src={model1} width="800"S height="800" alt="Boy" />
-        </div>
-      </header>
+      <div className="Intro">
+        <p>My name is Martin Casas. I'm a Front-End web developer.</p>
+        <img src={model1} width="800" height="800" alt="Boy" />
+      </div>
+    
     </section>
   );
 }

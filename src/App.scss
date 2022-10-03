@@ -3,6 +3,7 @@
   scroll-behavior: smooth;
 }
 
+
 .bar{
   font-size: 2em;
   position: fixed;
@@ -37,11 +38,8 @@
   padding: 10px;
 }
 
-.App {
+.Start {
   text-align: center;
-}
-
-.App-header {
   background-color: #235284 ;
   min-height: 100vh;
   display: flex;
@@ -74,7 +72,7 @@
   border-radius: 15px;
   padding: 20px;
   margin: 3vw;;
-
+  
 }
 
 .firstPartMe{
@@ -85,9 +83,10 @@
   background-color: #143E69;
   
   img{
-   width: 30vw;
-   height: 30vw;
- }
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+  }
 }
 
 .secondPartMe{
@@ -98,7 +97,7 @@
   overflow: auto;
   padding: 10px;
 }
-  
+
 
 .preTech{
   display: flex;
@@ -108,7 +107,7 @@
 
 #style-5::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
   box-shadow: none;
 	background-color: #F5F5F5;
 }
@@ -124,7 +123,7 @@
   background-color: #0ae;
 	
 	background-image: -webkit-gradient(linear, 0 0, 0 100%,
-	                   color-stop(.5, rgba(255, 255, 255, .2)),
+  color-stop(.5, rgba(255, 255, 255, .2)),
 					   color-stop(.5, transparent), to(transparent));
 }
 
@@ -142,17 +141,17 @@
   border-radius: 15px;
   margin: 10px;
   height: fit-content;
-
+  
   div{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
-p{
-  margin: 0;
-}
-
+    p{
+      margin: 0;
+    }
+    
     img{
       width: 5vw;
       height: 5vw;
@@ -169,13 +168,13 @@ p{
 
 #Courses{
   padding: 10px;
-
+  
   div{
     h1{
       font-size: 3em;
     }
   }
-
+  
 }
 
 .CourseList{
@@ -183,7 +182,7 @@ p{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  
 }
 
 .CourseItem{
@@ -227,24 +226,24 @@ p{
   justify-content: space-between;
   width: 350px;
   height: 500px;
-
+  
   p{
     background-color: #235384;
     padding: 5px;
     border-radius: 5px;
   }
-
+  
   .button_holder{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     a{
       background-color: white;
       padding: 5px;
       border-radius: 5px;
     }
-
+    
   }
   img{
     height: 200px;
@@ -288,4 +287,117 @@ p{
   color: burlywood;
 }
 
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+  .bar{
+    font-size: larger;
+  }
+
+  .Start{
+    font-size: 2rem;
+    .Intro{
+
+      display: flex;
+      flex-direction: column-reverse;
+
+      img{
+        height: 250px;
+        width: 250px;
+      }
+    }
+  }
+
+  .Me{
+    height: auto;
+    
+    .firstPartMe{
+      height: auto;
+      flex-direction: column;
+
+      img{
+        width: 90vw;
+        height: 90vw;
+      }
+
+      .Description{
+        font-size: smaller;
+        width: 80%;
+        
+        ul{
+          margin:0;
+        }
+        p{
+          font-size: smaller;
+        }
+      }
+    }
+    .secondPartMe{
+      font-size: medium;
+
+      .preTech{
+        flex-direction: column;
+
+        #techModel{
+          width: 80vw;
+          height: 80vw;
+        }
+        
+        .Techs{
+          width: 80%;
+          font-size:medium;
+          padding: 5%;
+        }
+      }
+    }
+  }
+  
+  .CourseList{
+    flex-direction: column;
+    font-size: medium;
+    .CourseItem{
+      margin-top: 15px;
+    }
+  }
+
+  .projects{
+    .postProject{
+      flex-direction: column;
+      align-items: center;
+      img{
+        width: 80vw;
+        height: 80vw;
+      }
+      .card-wrapper{
+        height: auto;
+        margin-bottom: 10px;
+        img{
+          width: 100%;
+          height: auto;
+        }
+        h1{
+          margin-top: 5px;
+          margin-bottom: 5px;
+          font-size: x-large;
+        }
+      }
+    }
+  }
+
+  .socials{
+    font-size: smaller;
+    .socialCont{
+      flex-direction: column;
+    }
+  }
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {  }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  }
+
+/* Large desktop */
+@media (min-width: 1200px) {  }
 
