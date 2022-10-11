@@ -12,95 +12,111 @@ import jspic from './icons/js.png'
 import tspic from './icons/typescript.svg'
 import selfie from './icons/20220911_223943.jpg'
 
-function Me() {
+function Me(props) {
 
-    const techarr = [
-      {
-        name: "React",
-        pic: atompic
-      },
-      {
-        name: "Bootstrap",
-        pic: bootstrappic
-      },
-      {
-        name: "CSS",
-        pic:  csspic
-      },
-      {
-        name: "Github",
-        pic: githubpic
-      },
-      {
-        name: "HTML5",
-        pic: htmlpic
-      },
-      {
-        name: "JavaScript",
-        pic: jspic
-      },
-      {
-        name: "Python",
-        pic: pythonpic
-      },
-      {
-        name: "SASS",
-        pic: sasspic
-      },
-      {
-        name: "Redux",
-        pic: reduxpic
-      },
-      {
-        name: "TypeScript",
-        pic: tspic
-      },
-      {
-        name: "Tailwind",
-        pic: tailpic
-      }
-    ]
+  const techarr = [
+    {
+      name: "React",
+      pic: atompic
+    },
+    {
+      name: "Bootstrap",
+      pic: bootstrappic
+    },
+    {
+      name: "CSS",
+      pic:  csspic
+    },
+    {
+      name: "Github",
+      pic: githubpic
+    },
+    {
+      name: "HTML5",
+      pic: htmlpic
+    },
+    {
+      name: "JavaScript",
+      pic: jspic
+    },
+    {
+      name: "Python",
+      pic: pythonpic
+    },
+    {
+      name: "SASS",
+      pic: sasspic
+    },
+    {
+      name: "Redux",
+      pic: reduxpic
+    },
+    {
+      name: "TypeScript",
+      pic: tspic
+    },
+    {
+      name: "Tailwind",
+      pic: tailpic
+    }
+  ]
+
+  const techarrdone = techarr.map((tech) =>
+    <div key={tech.name}>
+      <img alt="techpic" src={tech.pic} />
+      <p>{tech.name}</p>
+    </div>
+  )
+
+  let content = {
+    english: {
+      title: 'Who am I?',
+      desc: "I'm an Argentinian dev, just starting out in the craft. I've been completing the FreeCodeCamp Curriculum and complementing it with other resources. This is my first react app! I will be listing the projects I work on here.",
+      bullets: ['Age : 23', 'Nationality : Argentinian', 'Bilingual : Spanish & English', 'Location: Cordoba, Argentina', 'Studying translation and engineering', 'Basic level portuguese and french'],
+      subtitle: 'Technologies'
+    },
+    spanish: {
+      title: 'Quien soy?',
+      desc: "Soy un desarrollador web Argentino, empezando a practicar. Realize los cursos de la parte Front End de FreeCodeCamp y los complemente con otros recursos.Estas es mi primera app en React! Estare publicando los proyectos en los que trabaje aqui.",
+      bullets: ['Edad : 23', 'Nacionalidad : Argentino', 'Bilingue: Español & Ingles', 'Ubicacion: Cordoba, Argentina', 'Estudiante de Traductorado e Ingenieria', 'Nivel basico de portugues y frances'],
+      subtitle: 'Tecnologias'
+    }
+  }
+
+
+  props.language === "english"
+    ? (content = content.spanish)
+    : (content = content.english);
   
-    const techarrdone = techarr.map((tech) =>
-      <div key={tech.name}>
-        <img alt="techpic" src={tech.pic} />
-        <p>{tech.name}</p>
-      </div>
-    )
   
-    return (
-        <section id="me" className='Me'>
-        <div className='firstPartMe'>
-                <div className="Description">
-                    <h2>Who am I?</h2>
-            
-                    <p>I'm an Argentinian dev, just starting out in the craft. I've been completing the FreeCodeCamp Curriculum and complementing it with other resources.
-                        This is my first react app! I will be listing the projects I work on here.
-                    </p>
-                </div>
-                <img src={selfie} alt='selfie' />
-                <div className='Description'>
-                    <ul>
-                        <li><p>Age : 23</p></li>
-                        <li><p>Nationality : Argentinian</p></li>
-                        <li><p>Bilingual : Spanish & English</p></li>
-                        <li><p>Location : Cordoba, Argentina</p></li>
-                        <li><p>Studying translation and engineering</p></li>
-                        <li><p>Basic level portuguese and french</p></li>
-                    </ul>
-                </div>
+  return (
+      <section id="me" className='Me'>
+      <div className='firstPartMe'>
+        <div className="Description">
+          <h2>{content.title}</h2>
+  
+          <p>{content.desc}</p>
         </div>
-        <div className='secondPartMe'>
-          <h2>Technologies</h2>
-          <div className='preTech'>
-            <img alt="techModel" src={techModel} id='techModel' />
-            <div className="Techs" id="style-5">
-              {techarrdone}
-            </div>
+        <img src={selfie} alt='selfie' />
+        <div className='Description'>
+          <ul>
+            {content.bullets.map((item) => 
+              <li><p>{item}</p></li>)}
+            
+          </ul>
+        </div>
+      </div>
+      <div className='secondPartMe'>
+        <h2>{content.subtitle}</h2>
+        <div className='preTech'>
+          <img alt="techModel" src={techModel} id='techModel' />
+          <div className="Techs" id="style-5">
+            {techarrdone}
           </div>
         </div>
-      </section>
-    )
+      </div>
+    </section>
+  )
 }
   
 export default Me;

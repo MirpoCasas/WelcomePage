@@ -12,6 +12,7 @@
   height: 5vh;
   background-color: #3271a5 ;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   color: white;
@@ -36,6 +37,13 @@
 
 .navbutton{
   padding: 10px;
+  display: flex;
+}
+
+.selector{
+  padding: 10px;
+  display: flex;
+  margin-right: auto;
 }
 
 .Start {
