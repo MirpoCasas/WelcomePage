@@ -1,48 +1,194 @@
 
 
-export default function Courses(props) {
+function Coruses(props) {
+    
 
-
-  let titles = []
-
-  props.language === "english"
-    ? (titles = ['Estos son los cursos en los cuales trabaje', 'credencial','En curso'])
-    : (titles = ['These are the courses I have worked on', "credential",'Ongoing']);
-
-  return (
-    <section id="Courses">
-      <div>
-        <h1>{titles[0]}</h1>
-        <div className='CourseList'>
-          <div className="CourseItem">
-            <h2>FreeCodeCamp</h2>
-            <ul>
-              <li>Responsive Web Design - <a target="_blank" rel='noreferrer' href="https://www.freecodecamp.org/certification/Mirpo/responsive-web-design">{titles[1]}</a></li>
-              <li>JavaScript Algorithms and Data Structures - <a target="_blank" rel='noreferrer' href="https://www.freecodecamp.org/certification/Mirpo/javascript-algorithms-and-data-structures">{titles[1]}</a></li>
-              <li>Front End Development Libraries - <a target="_blank" rel='noreferrer' href="https://freecodecamp.org/certification/Mirpo/front-end-development-libraries">{titles[1]}</a></li>
-              <li>Data Visualization - <a target="_blank" rel='noreferrer' href="https://freecodecamp.org/certification/Mirpo/data-visualization">{titles[1]}</a></li>
-              <li>Python - {titles[2]}</li>
-            </ul>
-          </div>
-          <div className="CourseItem">
-            <h2>SoloLearn</h2>
-            <ul>
-              <li>Python Core - <a target="_blank" rel='noreferrer' href="https://www.sololearn.com/certificates/course/en/1628071/1073/landscape/png">{titles[1]} (png)</a></li>
-              <li>React + Redux - <a target="_blank" rel='noreferrer' href="https://api2.sololearn.com/v2/certificates/CT-XDXCFD4L/image/png">{titles[1]} (png)</a></li>
-            </ul>
-          </div>
-          <div className="CourseItem">
-            <h2>Open BootCamp</h2>
-            <ul>
-              <li>HTML & CSS</li>
-            </ul>
-            <h2>Udacity</h2>
-            <ul>
-              <li>Version Control with Git</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+    if (props.lang === "English") {
+    
+        return (
+            <section id='Courses' className="Courses pagePart">
+                <h2 className="partTitle">Courses</h2>
+                <div className="Courses_item">
+                    <h3>FreeCodeCamp</h3>
+                    <ul>
+                        <li>
+                            Responsive Web Design{" "}
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://www.freecodecamp.org/certification/Mirpo/responsive-web-design"
+                            >
+                                <button className="coursesLink">Credential</button>
+                            </a>
+                        </li>
+                        <li>
+                            JavaScript Algorithms and Data Structures{" "}
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://www.freecodecamp.org/certification/Mirpo/javascript-algorithms-and-data-structures"
+                            >
+                                <button className="coursesLink">Credential</button>
+                            </a>
+                        </li>
+                        <li>
+                            Front End Development Libraries{" "}
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://freecodecamp.org/certification/Mirpo/front-end-development-libraries"
+                            >
+                                <button className="coursesLink">Credential</button>
+                            </a>
+                        </li>
+                        <li>
+                            Data Visualization{" "}
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://freecodecamp.org/certification/Mirpo/data-visualization"
+                            >
+                                <button className="coursesLink">Credential</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div className="Courses_item">
+                    <h3>SoloLearn</h3>
+                    <ul>
+                        <li>
+                            Python Core{" "}
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://www.sololearn.com/certificates/course/en/1628071/1073/landscape/png"
+                            >
+                                <button className="coursesLink">
+                                    Credential(png Direct Download)
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            React + Redux{" "}
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://api2.sololearn.com/v2/certificates/CT-XDXCFD4L/image/png"
+                            >
+                                <button className="coursesLink">
+                                    Credential(png Direct Download)
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div className="Courses_item">
+                    <h3>Udacity</h3>
+                    <ul>
+                        <li>Version Control with Git</li>
+                    </ul>
+                </div>
+                <div className="Courses_item">
+                    <h3>Airont Labs</h3>
+                    <ul>
+                        <li>Bootcamp for front-end devs. 14 weeks.</li>
+                    </ul>
+                </div>
+            </section>
+        )
+    } else {
+        return (
+            <section id='Courses' className="Courses pagePart">
+                <h2 className="partTitle">Cursos</h2>
+                <div className="Courses_item">
+                    <h3>FreeCodeCamp</h3>
+                    <ul>
+                        <li>
+                            Diseño Web Adaptativo
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://www.freecodecamp.org/certification/Mirpo/responsive-web-design"
+                            >
+                                <button className="coursesLink">Credencial</button>
+                            </a>
+                        </li>
+                        <li>
+                        Algoritmos de JavaScript y Estructuras de Datos
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://www.freecodecamp.org/certification/Mirpo/javascript-algorithms-and-data-structures"
+                            >
+                                <button className="coursesLink">Credencial</button>
+                            </a>
+                        </li>
+                        <li>
+                        Librerías de desarrollo de la interfaz
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://freecodecamp.org/certification/Mirpo/front-end-development-libraries"
+                            >
+                                <button className="coursesLink">Credencial</button>
+                            </a>
+                        </li>
+                        <li>
+                        Visualización de Datos
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://freecodecamp.org/certification/Mirpo/data-visualization"
+                            >
+                                <button className="coursesLink">Credencial</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div className="Courses_item">
+                    <h3>SoloLearn</h3>
+                    <ul>
+                        <li>
+                            Python Core{" "}
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://www.sololearn.com/certificates/course/en/1628071/1073/landscape/png"
+                            >
+                                <button className="coursesLink">
+                                    Credencial (png Direct Download)
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            React + Redux{" "}
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://api2.sololearn.com/v2/certificates/CT-XDXCFD4L/image/png"
+                            >
+                                <button className="coursesLink">
+                                    Credencial (png Direct Download)
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div className="Courses_item">
+                    <h3>Udacity</h3>
+                    <ul>
+                        <li>Control de Versiones con Git</li>
+                    </ul>
+                </div>
+                <div className="Courses_item">
+                    <h3>Airont Labs</h3>
+                    <ul>
+                        <li>Bootcamp para front-end devs. 14 semanas.</li>
+                    </ul>
+                </div>
+            </section>
+        )
+    }
 }
+
+export default Coruses
