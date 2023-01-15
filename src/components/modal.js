@@ -16,8 +16,90 @@ function Modal(props) {
         body.style.overflow = "auto";
     }
 
-    return(
-        <div className="Modal">
+
+    if (props.lang === "English") {
+        
+    
+
+        return (
+            <div className="Modal">
+                <img
+                    onClick={closeModal}
+                    src={crossSvg}
+                    alt="close modal"
+                    className="Modal-closer"
+                ></img>
+                <ul>
+                    <li>
+                        Bilingual:{" "}
+                        <ul>
+                            <li>
+                                Spanish{" "}
+                                <img
+                                    className="flagEmoji"
+                                    alt="spanish flag"
+                                    src={spaflag}
+                                ></img>
+                            </li>
+                            <li>
+                                English{" "}
+                                <img
+                                    className="flagEmoji"
+                                    alt="usa flag"
+                                    src={usflag}
+                                ></img>
+                            </li>
+                        </ul>
+                    </li>
+                    <hr></hr>
+                    <li>
+                        Also a student of:
+                        <ul>
+                            <li>Mechanical Engineering 🔧</li>
+                            <li>English Translation 💬</li>
+                        </ul>
+                    </li>
+                    <hr></hr>
+                    <li>
+                        Also basic speaker of:
+                        <ul>
+                            <li>
+                                French{" "}
+                                <img
+                                    className="flagEmoji"
+                                    alt="france flag"
+                                    src={frflag}
+                                ></img>
+                            </li>
+                            <li>
+                                Portuguese{" "}
+                                <img
+                                    className="flagEmoji"
+                                    alt="brazil flag"
+                                    src={brflag}
+                                ></img>
+                            </li>
+                        </ul>
+                    </li>
+                    <hr></hr>
+                    <li>
+                        Located in Cordoba, Argentina{" "}
+                        <img className="flagEmoji" alt="argenitna flag" src={arflag}></img>
+                    </li>
+                </ul>
+                <p>
+                    I wish to study and hone my craft as a developer 💻 as I find the job of
+                    solving the puzzles it creates fascinating ✨. I hope to someday become
+                    multilingual and disiplined in the multiple areas I am studying 🤓 so as
+                    to combine them in different projects 🌎. The posibility of working
+                    abroad from home is very aluring 👷🏼‍♂️, but to be honest, the chance to
+                    work with my cat 😺 arround is the cherry on top 💞 .
+                </p>
+            </div>
+        )
+    } else {
+        return (
+            <div className="Modal">
             <img
                 onClick={closeModal}
                 src={crossSvg}
@@ -26,10 +108,10 @@ function Modal(props) {
             ></img>
             <ul>
                 <li>
-                    Bilingual:{" "}
+                    Bilingue:{" "}
                     <ul>
                         <li>
-                            Spanish{" "}
+                            Español{" "}
                             <img
                                 className="flagEmoji"
                                 alt="spanish flag"
@@ -37,7 +119,7 @@ function Modal(props) {
                             ></img>
                         </li>
                         <li>
-                            English{" "}
+                            Ingles{" "}
                             <img
                                 className="flagEmoji"
                                 alt="usa flag"
@@ -48,18 +130,18 @@ function Modal(props) {
                 </li>
                 <hr></hr>
                 <li>
-                    Also a student of:
+                    Estudiante de:
                     <ul>
-                        <li>Mechanical Engineering 🔧</li>
-                        <li>English Translation 💬</li>
+                        <li>Ingenieria Mecanica 🔧</li>
+                        <li>Traductorado de Ingles 💬</li>
                     </ul>
                 </li>
                 <hr></hr>
                 <li>
-                    Also basic speaker of:
+                    Tambien hablante basico de:
                     <ul>
                         <li>
-                            French{" "}
+                            Frances{" "}
                             <img
                                 className="flagEmoji"
                                 alt="france flag"
@@ -67,7 +149,7 @@ function Modal(props) {
                             ></img>
                         </li>
                         <li>
-                            Portuguese{" "}
+                            Portugués{" "}
                             <img
                                 className="flagEmoji"
                                 alt="brazil flag"
@@ -78,20 +160,20 @@ function Modal(props) {
                 </li>
                 <hr></hr>
                 <li>
-                    Located in Cordoba, Argentina{" "}
+                    Ubicado en Cordoba, Argentina{" "}
                     <img className="flagEmoji" alt="argenitna flag" src={arflag}></img>
                 </li>
             </ul>
             <p>
-                I wish to study and hone my craft as a developer 💻 as I find the job of
-                solving the puzzles it creates fascinating ✨. I hope to someday become
-                multilingual and disiplined in the multiple areas I am studying 🤓 so as
-                to combine them in different projects 🌎. The posibility of working
-                abroad from home is very aluring 👷🏼‍♂️, but to be honest, the chance to
-                work with my cat 😺 arround is the cherry on top 💞 .
+                Me gustaria mejorar y seguir estudiando como programador 💻 ya que resolver
+                los problemas que plantea fascinante✨. Espero algun dia ser poliglota y ademas
+                disciplinado en las areas que estudio 🤓 asi poder combinarlas en distintos projectos 🌎.
+                La posibilidad de trabajar para el exterior o desde casa 👷🏼‍♂️ es llamativa, pero honestamente
+                lo que mas me llama es la posibilidad de trabajar con mi gata alrededor 😺 💞 .
             </p>
         </div>
-    )
+        )
+    }
 };
 
 export default Modal;
