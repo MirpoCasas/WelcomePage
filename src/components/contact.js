@@ -28,7 +28,7 @@ function Contact(props) {
                     rel="noreferrer"
                     href="https://drive.google.com/file/d/1XUWWGZkOJgRBW7pQRc5TIX5Zmptqa83J/view?usp=share_link"
                 >
-                    <button>
+                    <button className="cvButton">
                         See CV on Drive
                         <img
                             alt="drive logo"
@@ -65,7 +65,7 @@ function Contact(props) {
                     rel="noreferrer"
                     href="https://drive.google.com/file/d/1XUWWGZkOJgRBW7pQRc5TIX5Zmptqa83J/view?usp=share_link"
                 >
-                    <button>
+                    <button className="cvButton btn">
                         Ver CV en Drive
                         <img
                             alt="drive logo"

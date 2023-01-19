@@ -16,7 +16,7 @@ function NavBar(props) {
     return (
         <nav className="NavBar st">
             <button onClick={props.handleLang}>
-                {props.lang === "English" ? "Cambiar a ES" : "Switch to EN"}
+                <p className="langChangeText">{props.lang === "English" ? "Cambiar a ES" : "Switch to EN"}</p>
                 <img
                     className="langFlag"
                     alt="flag"
@@ -26,11 +26,11 @@ function NavBar(props) {
             <img className="menuImg" alt="menu" src={hammenu} onClick={handleMenu}></img>
             <div className="Dropdown hidden st">
                 <a href="#Home">Home</a>
-                <a href="#Desc">{props.lang === "English" ? "Yo" : "Myself"}</a>
-                <a href="#Courses">{props.lang === "English" ? "Cursos" : "Courses"}</a>
-                <a href="#Techs">{props.lang === "English" ? "Tecnologias" : "Techs"}</a>
-                <a href="#Proyects">{props.lang === "English" ? "Projectos" : "Proyects"}</a>
-                <a href="#Contact">{props.lang === "English" ? "Cotacto" : "Contact"}</a>
+                <a href="#Desc">{props.lang === "English" ? "Myself" : "Yo"}</a>
+                <a href="#Courses">{props.lang === "English" ? "Courses" : "Cursos"}</a>
+                <a href="#Techs">{props.lang === "English" ? "Techs" : "Tecnologias"}</a>
+                <a href="#Proyects">{props.lang === "English" ? "Proyects" : "Projectos"}</a>
+                <a href="#Contact">{props.lang === "English" ? "Contect" : "Contacto"}</a>
             </div>
         </nav>
     );

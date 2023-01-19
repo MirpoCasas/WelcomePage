@@ -146,6 +146,10 @@ a:active{
   font-size: 14px;
 }
 
+.langChangeText{
+  margin: 0;
+}
+
 .langFlag{
   height: 30px;
   width: 48px;
@@ -188,7 +192,7 @@ a:active{
 }
 
 .Intro{
-  height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -325,10 +329,18 @@ a:active{
 @media all and (min-width: 769px) and (max-width: 1300px){
   
   .Modal{
+    height: 90vh;
+    flex-direction: column;
+    overflow-x: scroll;
+    justify-content: space-between;
     font-size: 24px;
     width: 90vw;
   }
   
+  .Modal p{
+    width: 90%;
+  }
+
   .Intro{
     flex-direction: column;
     justify-content: space-around;
@@ -340,6 +352,12 @@ a:active{
     top: 5vw;
     left: 5vh;
     width: 500px;
+  }
+
+  .Modal-closer{
+    position: fixed;
+    top: 30px;
+    right: 30px;
   }
   
   .Ilustration{
@@ -364,10 +382,18 @@ a:active{
 @media all and (min-width: 481px) and (max-width: 768px){
 
   .Modal{
+    height: 90vh;
+    flex-direction: column;
+    overflow-x: scroll;
+    justify-content: space-between;
     font-size: 24px;
     width: 90vw;
   }
   
+  .Modal p{
+    width: 90%;
+  }
+
   .Intro{
     flex-direction: column;
     justify-content: space-around;
@@ -378,7 +404,13 @@ a:active{
     font-size: 64px;
     top: 5vw;
     left: 5vh;
-    width: 500px;
+    max-width: 90%;
+  }
+
+  .Modal-closer{
+    position: fixed;
+    top: 30px;
+    right: 30px;
   }
   
   .Ilustration{
@@ -386,12 +418,29 @@ a:active{
     height: 60vh;
     position: static;
     align-self: end;
+    margin: 0;
+  }
+
+  .Desc{
+    flex-direction: column;
+    height: auto;
+    padding: 30px 0px;
   }
   
   .Desc_part p{
-    width: 400px;
+    width: 90%;
   }
   
+  .Projects_item a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Projects_item button{
+    max-width: 70%;
+  }
+
   .ProjectPic{
     width: 90%;
     height: 300px;
@@ -400,4 +449,128 @@ a:active{
 }
 
 /*  Mobile  */
-@media all and (min-width: 320px) and (max-width: 480px){}
+@media all and (max-width: 480px){
+  .Modal{
+    height: 90vh;
+    flex-direction: column;
+    overflow-x: scroll;
+    justify-content: space-between;
+    font-size: 24px;
+    width: 90vw;
+  }
+  
+  .Modal p{
+    width: 90%;
+  }
+
+  .NavBar button{
+    width: min-content;
+  }
+
+  .langChangeText{
+    display: none;
+  }
+
+  .pagePart{
+    padding: 0px 15px;
+  }
+
+  .Intro{
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .Intro-header{
+    position: static;
+    font-size: 64px;
+    top: 5vw;
+    left: 5vh;
+    max-width: 90%;
+  }
+
+  .Modal-closer{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+  
+  .Ilustration{
+    width: 90%;
+    height: 70%;
+    position: static;
+    align-self: end;
+    margin: 0;
+  }
+
+  .Desc{
+    flex-direction: column;
+    height: auto;
+    padding: 30px 0px;
+  }
+  
+
+
+  .Desc_part p{
+    width: 90%;
+  }
+  
+  .Desc_part button{
+    width: 90%;
+  }
+
+  .Courses_item{
+    width: 90%;
+    margin: 20px 0px;
+    padding: 0px 15px;
+  }
+
+  .Courses_item ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .Courses_item li{
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 90%;
+  }
+
+  .coursesLink{
+    font-size: 20px;
+  }
+
+  .techpic{
+    width: 100px;
+    height: 100px;
+  }
+
+  .Projects{
+    align-items: center;
+  }
+
+  .Projects_item{
+    width: 80%;
+  }
+
+  .Projects_item a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Projects_item button{
+    max-width: 70%;
+  }
+
+  .ProjectPic{
+    width: 90%;
+    height: 300px;
+  }
+
+
+  .cvButton{
+    width: 90%;
+    padding: 0;
+  }
+}
