@@ -111,7 +111,7 @@ a:active{
 
 .NavBar{
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 60px;
   background-color: #6EB1EE;
   z-index: 2;
@@ -258,8 +258,12 @@ a:active{
 .Courses_item{
   margin: 20px 10px;
   padding: 0px 30px;
-  border-radius: 50px;
-  background-color: #4d4d4d38;
+  background: rgba(143, 143, 143, 0.42);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.2px);
+  -webkit-backdrop-filter: blur(10.2px);
+  border: 1px solid rgba(143, 143, 143, 0.3);
   width: 70vw;
 }
 
@@ -307,17 +311,25 @@ a:active{
   justify-content: space-between;
   margin: 20px 0px;
   padding: 0px 30px;
-  border-radius: 30px;
   width: 70vw;
-  background-color: #444444;
+  background: rgba(143, 143, 143, 0.42);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.2px);
+  -webkit-backdrop-filter: blur(10.2px);
+  border: 1px solid rgba(143, 143, 143, 0.3);
 }
-
 .Projects_item h3{
   margin: 10px 0px;
 }
 
 .ProjectPic{
   height: 400px;
+}
+
+.Projects_buttoncont{
+  display: flex;
+  gap: 20px;
 }
 
 .buttonImg{
