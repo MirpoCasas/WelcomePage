@@ -1,0 +1,184 @@
+.Modal {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 70vw;
+  height: 80vh;
+  background-color: grey;
+  border: solid 3px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  padding: 20px;
+  border-radius: 100px;
+}
+
+.Modal-closer {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.Modal p {
+  width: 45%;
+}
+
+.Modal li li,
+.Modal li:last-of-type {
+  display: flex;
+  align-items: center;
+}
+
+.Desc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+
+.Desc_part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Desc_part p {
+  width: 800px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.Pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+}
+
+.Courses {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: 300;
+}
+
+.Courses_item {
+  margin: 20px 10px;
+  padding: 0px 30px;
+  background: rgba(143, 143, 143, 0.42);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.2px);
+  -webkit-backdrop-filter: blur(10.2px);
+  border: 1px solid rgba(143, 143, 143, 0.3);
+  width: 70vw;
+}
+
+.coursesLink {
+  font-size: 24px;
+  height: 50px;
+  width: auto;
+  padding: 0px 10px;
+}
+
+/*  Smaller Screens  */
+@media all and (min-width: 769px) and (max-width: 1300px) {
+  .Modal {
+    height: 90vh;
+    flex-direction: column;
+    overflow-x: scroll;
+    justify-content: space-between;
+    font-size: 24px;
+    width: 90vw;
+  }
+
+  .Modal p {
+    width: 90%;
+  }
+
+  .Modal-closer {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+
+  .Desc_part p {
+    width: 400px;
+  }
+}
+
+/*  Ipad/Tablets  */
+@media all and (min-width: 481px) and (max-width: 768px) {
+  .Modal {
+    height: 90vh;
+    flex-direction: column;
+    overflow-x: scroll;
+    justify-content: space-between;
+    font-size: 24px;
+    width: 90vw;
+  }
+
+  .Modal p {
+    width: 90%;
+  }
+
+  .Modal-closer {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+
+  .Desc {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 0px;
+  }
+
+  .Desc_part p {
+    width: 80vw;
+  }
+}
+
+/*  Mobile  */
+@media all and (max-width: 480px) {
+  .Modal {
+    height: 90vh;
+    flex-direction: column;
+    overflow-x: scroll;
+    justify-content: space-between;
+    font-size: 24px;
+    width: 90vw;
+  }
+
+  .Modal p {
+    width: 90%;
+  }
+
+  .pagePart {
+    padding: 0px 15px;
+  }
+
+  .Modal-closer {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+
+  .Desc {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 0px;
+  }
+
+  .Desc_part p {
+    width: 80vw;
+  }
+
+  .Desc_part button {
+    width: 90%;
+  }
+}

@@ -2,13 +2,13 @@ import { useState } from "react";
 
 import "./App.css";
 import Modal from "./components/modal";
-import Intro from "./components/intro.js";
-import Desc from "./components/desc.js";
-import Courses from "./components/courses.js";
-import Projects from "./components/projects.js";
-import Techs from "./components/techs.js";
-import Contact from "./components/contact.js";
-import blackgithub from "./icons/github.png";
+import Intro from "./components/intro.jsx";
+import Desc from "./components/desc.jsx";
+import Courses from "./components/courses.jsx";
+import Projects from "./components/projects.jsx";
+import Techs from "./components/techs.jsx";
+import Contact from "./components/contact.jsx";
+/* import blackgithub from "./icons/github.png"; */
 
 import NavBar from "./components/navbar";
 

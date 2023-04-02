@@ -1,4 +1,4 @@
-
+import "./courses.css"
 
 function Coruses(props) {
     

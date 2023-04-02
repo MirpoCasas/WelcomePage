@@ -2,6 +2,7 @@ import movieFinderPic from "../icons/MovieFinder.png";
 import stackPic from "../icons/StackOverflow_Questions.png";
 import blackgithub from "../icons/github.png";
 import docslogo from "../icons/docs.svg";
+import "./projects.css"
 
 function Projects(props) {
 	if (props.lang === "English") {

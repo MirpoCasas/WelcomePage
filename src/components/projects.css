@@ -1,0 +1,59 @@
+.Projects{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+ font-weight: 300;
+}
+
+.Projects_item{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+ margin: 20px 0px;
+ padding: 0px 30px;
+ width: 70vw;
+ background: rgba(143, 143, 143, 0.42);
+ border-radius: 16px;
+ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+ backdrop-filter: blur(10.2px);
+ -webkit-backdrop-filter: blur(10.2px);
+ border: 1px solid rgba(143, 143, 143, 0.3);
+}
+
+.Projects_item h3{
+ margin: 10px 0px;
+}
+
+.ProjectPic{
+ height: 400px;
+}
+
+.Projects_buttoncont{
+ display: flex;
+ gap: 20px;
+}
+
+.buttonImg{
+ width: 35px;
+ height: 35px;
+}
+
+/*  Smaller Screens  */
+@media all and (min-width: 769px) and (max-width: 1300px){
+  
+}
+
+/*  Ipad/Tablets  */
+@media all and (min-width: 481px) and (max-width: 768px){
+ .Projects_buttoncont{
+  flex-direction: column;
+ }
+}
+
+/*  Mobile  */
+@media all and (max-width: 480px){
+ .Projects_buttoncont{
+  flex-direction: column;
+ }
+}

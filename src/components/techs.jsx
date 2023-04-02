@@ -9,11 +9,12 @@ import pythonpic from "../icons/python.png";
 import sasspic from "../icons/sass.png";
 import jspic from "../icons/js.png";
 import tspic from "../icons/typescript.svg";
-import blackgithub from "../icons/github.png";
 import bashpic from "../icons/bash.png";
 import materialpic from "../icons/material-ui-1.svg";
 import postgrepic from "../icons/postgresql.svg";
 import figmapic from "../icons/figma.png";
+import "./techs.css"
+/* import blackgithub from "../icons/github.png"; */
 
 
 

@@ -1,0 +1,103 @@
+.NavBar{
+ position: fixed;
+ width: 100vw;
+ height: 60px;
+ background-color: #6EB1EE;
+ z-index: 3;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ transition: 1s;
+}
+
+.NavBar.st{
+ background-color: inherit;
+}
+
+.NavBar.hidden{
+ transform: translateY(-60px);
+}
+
+.menuImg{
+ height: 50px;
+ margin: 0px 20px;
+ border: solid 1px black;
+ border-radius: 10px;
+ background-color: inherit;
+}
+
+.NavBar button{
+ min-height: 30px;
+ width: 200px;
+ margin: 0px 20px;
+ padding: 5px 10px;
+ font-size: 14px;
+}
+
+.langChangeText{
+ margin: 0;
+}
+
+.langFlag{
+ height: 30px;
+ width: 48px;
+}
+
+.Dropdown{
+ position: absolute;
+ width: 250px;
+
+ background-color: #6EB1EE;
+ right: 0;
+ top: 60px;
+ z-index: -1;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: flex-end;
+ transition: 1s;
+}
+
+.Dropdown.st{
+ background-color: transparent;
+}
+.Dropdown.st a{
+ color: white;
+}
+
+.Dropdown a{
+ height: 50px;
+ align-items: center;
+ padding: 0px 25px;
+ color: #262626;
+ width: 90%;
+ text-align: end;
+}
+.Dropdown a:hover{
+ text-decoration: underline;
+}
+
+.Dropdown.hidden{
+ transform: translateY(-510px);
+}
+
+/*  Smaller Screens  */
+@media all and (min-width: 769px) and (max-width: 1300px){
+  
+}
+
+/*  Ipad/Tablets  */
+@media all and (min-width: 481px) and (max-width: 768px){
+}
+
+/*  Mobile  */
+@media all and (max-width: 480px){
+ .NavBar button{
+   width: min-content;
+ }
+
+ .langChangeText{
+   display: none;
+ }
+
+}

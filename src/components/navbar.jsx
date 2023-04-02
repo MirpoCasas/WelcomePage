@@ -1,7 +1,7 @@
 import hammenu from "../icons/hamburger.svg";
 import spanishflag from "../icons/spanish.png";
 import englishflag from "../icons/english.svg";
-
+import "./navbar.css"
 
 
 function NavBar(props) {

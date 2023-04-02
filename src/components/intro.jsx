@@ -1,4 +1,5 @@
 import ilustration from "../icons/Coding.svg";
+import "./intro.css"
 
 function Intro() {
     return (<section id="Home" className="Intro pagePart">

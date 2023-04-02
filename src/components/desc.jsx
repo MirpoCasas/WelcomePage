@@ -1,4 +1,5 @@
 import mypic from "../icons/mypic.jpg";
+import "./desc.css"
 
 function Desc(props) {
 
