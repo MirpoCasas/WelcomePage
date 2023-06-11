@@ -1,0 +1,84 @@
+button{
+ background-color: #458DC9;
+ width: 370px;
+ font-family: 'Patua One', cursive;
+ font-size: 54px;
+ border-radius: 32px;
+}
+
+
+nav > img{
+ width: 100px;
+ height: 100px;
+}
+
+.Start{
+ font-family: 'Patua One', cursive;
+ font-size: 64px;
+ display: flex;
+ flex-direction: column;
+ gap: 50px;
+ overflow: hidden;
+}
+
+.pagePart{
+ display: flex;
+ align-items: center;
+}
+
+.first{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ font-size: 74px;
+
+ p{
+  width: 691px
+ }
+ img{
+  width: 662px;
+  height: 662px;
+ }
+}
+
+.Stripe{
+ position: absolute;
+ width: 200%;
+ height: 600px;
+ background-color: #458DC9;
+ transform: skewY(-30deg);
+ z-index: -1;
+}
+
+.second{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ font-size: 64px;
+
+ p{
+  width: 400px;
+  text-align: center;
+ }
+}
+
+.Circle{
+ background-color: #68E1FD;
+ width: 1600px;
+ height: 1600px;
+ position: absolute;
+ left: -800px;
+ top: 1700px;
+ border-radius: 50%;
+ z-index: -1;
+}
+
+.pack{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.third{
+ justify-content: space-around;
+}
