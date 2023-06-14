@@ -21,6 +21,7 @@ import reduxPic from '../assets/redux.svg'
 import sass from '../assets/sass.svg'
 import tailwind from '../assets/tailwind.svg'
 import tspic from '../assets/typescrypt.svg'
+import { Link } from 'react-router-dom'
 
 function AboutMe() {
 
@@ -113,36 +114,40 @@ function AboutMe() {
     <p>Airont Labs es una empresa que organizo junto con Altimetrik un bootcamp para desarrolladores Front End. Durante 14 semanas se enseñaron conceptos desde Vainilla JS hasta React JS culminando con un proyecto de pagina web en React.</p>
     <h4>No Country:</h4>
     <p>No Country es una ONG que conecta estudiantes de programacion y organizan proyectos reales con grupos con metodologias AGILE. Programe para dos proyectos y fui Team Leader para un total de seis equipos. Sigo realizando proyectos con su organizacion. Luego de superar la primera etapa 'Cohorte' y luego la etapa de 'Seleccionado' otorgan un certificado de cumplimiento e incluyen a una bolsa de trabajo con distintas empresas conectadas.</p>
-    <h3 className='subtitle'>Cursos y certificaciomes:</h3>
    </div>
+   <h3 className='subtitle'>Cursos y certificaciomes:</h3>
    <div className='courses'>
-    <div className="courses_item">
-     <img src={codeAcSVG} alt="Code Academy" id='codeacademy' />
-     <div className='courses_course'><p>Responsive Web Design <img src={newTab} alt="new tab" className='newTab' /></p></div>
-     <div className='courses_course'><p>JavaScript Algorithms and Data Structures<img src={newTab} alt="new tab" className='newTab' /></p></div>
-     <div className='courses_course'><p>Front End development libraries<img src={newTab} alt="new tab" className='newTab' /></p></div>
-     <div className='courses_course'><p>Data Visualization<img src={newTab} alt="new tab" className='newTab' /></p></div>
+    <div className="courses_div">
+     <div className="courses_item">
+      <img src={codeAcSVG} alt="Code Academy" id='codeacademy' />
+      <Link className='courses_course'><p>Responsive Web Design <img src={newTab} alt="new tab" className='newTab' /></p></Link>
+      <Link className='courses_course'><p>JavaScript Algorithms and Data Structures<img src={newTab} alt="new tab" className='newTab' /></p></Link>
+      <Link className='courses_course'><p>Front End development libraries<img src={newTab} alt="new tab" className='newTab' /></p></Link>
+      <Link className='courses_course'><p>Data Visualization<img src={newTab} alt="new tab" className='newTab' /></p></Link>
+     </div>
+     <div className="courses_item">
+      <img src={sololearn} alt="" />
+      <Link className='courses_course'> <p>Python Core <img src={newTab} alt="new tab" className='newTab' /></p></Link>
+      <Link className='courses_course'> <p>React + Redux <img src={newTab} alt="new tab" className='newTab' /></p></Link>
+     </div>
     </div>
-    <div className="courses_item">
-     <img src={sololearn} alt="" />
-     <div className='courses_course'> <p>Python Core <img src={newTab} alt="new tab" className='newTab' /></p></div>
-     <div className='courses_course'> <p>React + Redux <img src={newTab} alt="new tab" className='newTab' /></p></div>
-    </div>
-    <div className="courses_item">
-     <img src={udemy} alt="Udemy" />
-     <div className='courses_course'> <p>Version Control with Git <img src={newTab} alt="new tab" className='newTab' /></p></div>
-    </div>
-    <div className="courses_item">
-     <img src={nocountry} alt="No Country" />
-     <div className='courses_course'></div><p>Certificado de Seleccionado <img src={newTab} alt="new tab" className='newTab' /></p>
+    <div className="courses_div">
+     <div className="courses_item">
+      <img src={udemy} alt="Udemy" />
+      <Link className='courses_course'> <p>Version Control with Git <img src={newTab} alt="new tab" className='newTab' /></p></Link>
+     </div>
+     <div className="courses_item">
+      <img src={nocountry} alt="No Country" />
+      <Link className='courses_course'><p>Certificado de Seleccionado <img src={newTab} alt="new tab" className='newTab' /></p></Link>
+     </div>
     </div>
    </div>
+   <h4 className='subtitle'>Tecnologias:</h4>
    <div className="Techs">
-    <h4 className='subtitle'>Tecnologias:</h4>
     <div className="Techs_holder">
      {techArr.map((element) => {
       return (
-       <div key={element.index}>
+       <div key={element.index} className='Techs_item'>
         <img src={element.pic} alt={element.name} className='Techs_pic' />
         <p>{element.name}</p>
        </div>

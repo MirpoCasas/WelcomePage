@@ -18,8 +18,14 @@ function App() {
   function handleMenu() {
     if (navState === '') {
       setNavState('active')
+      if (window.screen.width < 600) {
+        document.body.style.overflow = 'hidden'
+      }
     } else {
       setNavState('')
+      if (window.screen.width < 600) {
+        document.body.style.overflow = 'auto'
+      }
     }
   }
 
