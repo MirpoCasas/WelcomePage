@@ -47,8 +47,8 @@ export default function Home() {
     <img className='fade-in-bottom contact_img home_img' src={home4} alt="" />
     <div className='contact'>
      <h2 className="">Contacto</h2>
-     <a><img src={linkedinlogo} alt="LinkedIn" className='contact_logo'/>Linkedin</a>
-     <a><img src={githublogo} alt="Github" className='contact_logo'/>GitHub</a>
+     <a href="https://www.linkedin.com/in/martinfcasas/" target="_blank" rel='noreferrer'><img src={linkedinlogo} alt="LinkedIn" className='contact_logo'/>Linkedin</a>
+     <a href="https://github.com/MirpoCasas" target="_blank" rel='noreferrer'><img src={githublogo} alt="Github" className='contact_logo'/>GitHub</a>
      <p>Email: mirpocasas@gmail.com</p>
     </div>
    </div>

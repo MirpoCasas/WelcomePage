@@ -1,6 +1,6 @@
-import movieFin from '../assets/image3.png'
+import movieFin from '../assets/movifindermockup.png'
 import proyectImg from '../assets/proyects.svg'
-import placeholder from '../assets/placeholder.svg'
+import placeholder from '../assets/tocome.svg'
 import { useState, useRef } from 'react'
 import navArrow from '../assets/navarrow.svg'
 
@@ -10,23 +10,23 @@ export default function Proyects() {
  let info = [
   {
    img: movieFin,
-   desc: 'This website lists recommended movies from TMDB API and lists them in a grid. It also displays movie info and trailers. Made as part of Airont Labs’ Bootcamp'
+   desc: 'Este sitio web recomienda peliculas basado en la API de The Movie DataBase. Esta hecha en originalmente Vainilla JS y fue re-hecha en React.'
   },
   {
    img: placeholder,
-   desc: 'This is my website for adverticing my software services'
+   desc: 'Este proyecto se va a desarrollar en las proximas semanas! Ponte en contacto conmigo si quieres saber mas.'
   },
   {
    img: placeholder,
-   desc: 'This website aims to provide an easy tool for fighting game players to publish, share and practice combos.'
+   desc: 'Este proyecto se va a desarrollar en las proximas semanas! Ponte en contacto conmigo si quieres saber mas.'
   },
   {
    img: placeholder,
-   desc: 'This is a podcast ranking and reviewing website.',
+   desc: 'Este proyecto se va a desarrollar en las proximas semanas! Ponte en contacto conmigo si quieres saber mas.',
   },
   {
    img: placeholder,
-   desc: 'This is a compendium of my js practice proyects.',
+   desc: 'Este proyecto se va a desarrollar en las proximas semanas! Ponte en contacto conmigo si quieres saber mas.',
   }
  ]
  const divRef = useRef(null);
