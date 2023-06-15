@@ -21,7 +21,6 @@ import reduxPic from '../assets/redux.svg'
 import sass from '../assets/sass.svg'
 import tailwind from '../assets/tailwind.svg'
 import tspic from '../assets/typescrypt.svg'
-import { Link } from 'react-router-dom'
 
 function AboutMe() {
 
@@ -120,25 +119,25 @@ function AboutMe() {
     <div className="courses_div">
      <div className="courses_item">
       <img src={codeAcSVG} alt="Code Academy" id='codeacademy' />
-      <Link className='courses_course'><p>Responsive Web Design <img src={newTab} alt="new tab" className='newTab' /></p></Link>
-      <Link className='courses_course'><p>JavaScript Algorithms and Data Structures<img src={newTab} alt="new tab" className='newTab' /></p></Link>
-      <Link className='courses_course'><p>Front End development libraries<img src={newTab} alt="new tab" className='newTab' /></p></Link>
-      <Link className='courses_course'><p>Data Visualization<img src={newTab} alt="new tab" className='newTab' /></p></Link>
+      <a className='courses_course'><p>Responsive Web Design <img src={newTab} alt="new tab" className='newTab' /></p></a>
+      <a className='courses_course'><p>JavaScript Algorithms and Data Structures<img src={newTab} alt="new tab" className='newTab' /></p></a>
+      <a className='courses_course'><p>Front End development libraries<img src={newTab} alt="new tab" className='newTab' /></p></a>
+      <a className='courses_course'><p>Data Visualization<img src={newTab} alt="new tab" className='newTab' /></p></a>
      </div>
      <div className="courses_item">
       <img src={sololearn} alt="" />
-      <Link className='courses_course'> <p>Python Core <img src={newTab} alt="new tab" className='newTab' /></p></Link>
-      <Link className='courses_course'> <p>React + Redux <img src={newTab} alt="new tab" className='newTab' /></p></Link>
+      <a className='courses_course'> <p>Python Core <img src={newTab} alt="new tab" className='newTab' /></p></a>
+      <a className='courses_course'> <p>React + Redux <img src={newTab} alt="new tab" className='newTab' /></p></a>
      </div>
     </div>
     <div className="courses_div">
      <div className="courses_item">
       <img src={udemy} alt="Udemy" />
-      <Link className='courses_course'> <p>Version Control with Git <img src={newTab} alt="new tab" className='newTab' /></p></Link>
+      <a className='courses_course'> <p>Version Control with Git <img src={newTab} alt="new tab" className='newTab' /></p></a>
      </div>
      <div className="courses_item">
       <img src={nocountry} alt="No Country" />
-      <Link className='courses_course'><p>Certificado de Seleccionado <img src={newTab} alt="new tab" className='newTab' /></p></Link>
+      <a className='courses_course'><p>Certificado de Seleccionado <img src={newTab} alt="new tab" className='newTab' /></p></a>
      </div>
     </div>
    </div>
