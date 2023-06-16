@@ -148,7 +148,7 @@ function AboutMe(props) {
    <div className="formation">
     <h3 className='subtitle'>{props.content.titlethree}</h3>
     <h4>{props.content.studyone}</h4>
-    <p>{props.content.studyoneintro}</p>
+    <p>{props.content.studyonedesc}</p>
     <h3 className='subtitle'>{props.content.titlefour}</h3>
     <h4>No Country:</h4>
     <p>{props.content.expone}</p>
