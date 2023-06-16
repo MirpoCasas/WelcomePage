@@ -6,8 +6,15 @@ import { Link } from 'react-router-dom'
 import linkedinlogo from '../assets/linkedinlogo.svg'
 import githublogo from '../assets/github.svg'
 import arflag from '../assets/arflag.svg'
+import PropTypes from 'prop-types'
 
-export default function Home() {
+
+export default function Home(props) {
+
+ Home.propTypes = {
+  content: PropTypes.object.isRequired
+ }
+
  return (
   <div className="home">
    <div className="stripe_gp">
@@ -16,13 +23,13 @@ export default function Home() {
     </div>
    </div>
    <div className='home_first pagePart'>
-    <p className="">Dev. Argentino <img src={arflag} alt="Argentina flag" className='ArFlag'/> estudiante de programacion y traduccion. Interesado en Arte, Cine, Diseño e Historia </p>
+    <p className="">{props.content.welcomeone}<img src={arflag} alt="Argentina flag" className='ArFlag'/>{props.content.welcometwo}</p>
     <img className='fade-in-bottom home_img' src={home1} alt="" />
    </div>
    <div className='home_second pagePart'>
     <img className='fade-in-bottom home_img' src={home2} alt="" />
     <div className='pack'>
-     <h2>Observa mis proyectos</h2>
+     <h2>{props.content.port}</h2>
      <Link to='/proyects'>
      <button>Portfolio</button>
      </Link>
@@ -36,7 +43,7 @@ export default function Home() {
    </div>
    <div className='home_third pagePart'>
     <div className='pack'>
-     <h2>Acerca de mi</h2>
+     <h2>{props.content.about}</h2>
      <Link to="/aboutme">
      <button>Info</button>
      </Link>
@@ -46,7 +53,7 @@ export default function Home() {
    <div className='home_fourth pagePart'>
     <img className='fade-in-bottom contact_img home_img' src={home4} alt="" />
     <div className='contact'>
-     <h2 className="">Contacto</h2>
+     <h2 className="">{props.content.cont}</h2>
      <a href="https://www.linkedin.com/in/martinfcasas/" target="_blank" rel='noreferrer'><img src={linkedinlogo} alt="LinkedIn" className='contact_logo'/>Linkedin</a>
      <a href="https://github.com/MirpoCasas" target="_blank" rel='noreferrer'><img src={githublogo} alt="Github" className='contact_logo'/>GitHub</a>
      <p>Email: mirpocasas@gmail.com</p>

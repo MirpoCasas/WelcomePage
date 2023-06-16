@@ -85,6 +85,13 @@ nav>img {
   height: 100px;
 }
 
+.langswitch{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
 /* Home styles */
 
 .home {
@@ -204,6 +211,7 @@ nav>img {
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    color: black;
   }
 
   a {
@@ -264,8 +272,6 @@ nav>img {
   cursor: pointer;
   min-width: 330px;
 }
-
-.sideHolder:focus {}
 
 .sideHolder::-webkit-scrollbar {
   display: none;

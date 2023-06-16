@@ -3,30 +3,36 @@ import proyectImg from '../assets/proyects.svg'
 import placeholder from '../assets/tocome.svg'
 import { useState, useRef } from 'react'
 import navArrow from '../assets/navarrow.svg'
+import PropTypes from 'prop-types'
 
 
-export default function Proyects() {
+
+export default function Proyects(props) {
+
+  Proyects.propTypes = {
+    content: PropTypes.object.isRequired
+  }
 
  let info = [
   {
    img: movieFin,
-   desc: 'Este sitio web recomienda peliculas basado en la API de The Movie DataBase. Esta hecha en originalmente Vainilla JS y fue re-hecha en React.'
+   desc: props.content.movieFin
   },
   {
    img: placeholder,
-   desc: 'Este proyecto se va a desarrollar en las proximas semanas! Ponte en contacto conmigo si quieres saber mas.'
+   desc: props.content.todo
   },
   {
    img: placeholder,
-   desc: 'Este proyecto se va a desarrollar en las proximas semanas! Ponte en contacto conmigo si quieres saber mas.'
+   desc: props.content.todo
   },
   {
    img: placeholder,
-   desc: 'Este proyecto se va a desarrollar en las proximas semanas! Ponte en contacto conmigo si quieres saber mas.',
+   desc: props.content.todo,
   },
   {
    img: placeholder,
-   desc: 'Este proyecto se va a desarrollar en las proximas semanas! Ponte en contacto conmigo si quieres saber mas.',
+   desc: props.content.todo,
   }
  ]
  const divRef = useRef(null);
@@ -51,7 +57,7 @@ export default function Proyects() {
   <div className='proyects'>
    <div className='proyects_first'>
     <img className='fade-in-bottom' src={proyectImg} alt="" />
-    <p>Estos son mis proyectos</p>
+    <p>{props.content.intro}</p>
    </div>
    <div>
     <div className="proyectApp">

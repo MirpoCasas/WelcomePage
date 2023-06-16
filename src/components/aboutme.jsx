@@ -22,12 +22,19 @@ import reduxPic from '../assets/redux.svg'
 import sass from '../assets/sass.svg'
 import tailwind from '../assets/tailwind.svg'
 import tspic from '../assets/typescrypt.svg'
+import threejspic from '../assets/threejsicon.svg'
 import usaflag from '../assets/usflag.svg'
 import brazilflag from '../assets/brazilflag.svg'
 import franceflag from '../assets/franceflag.svg'
 import spainflag from '../assets/spainflag.svg'
+import PropTypes from 'prop-types'
 
-function AboutMe() {
+AboutMe.propTypes = {
+ content: PropTypes.object.isRequired
+}
+
+function AboutMe(props) {
+
 
  let techArr = [
   {
@@ -91,6 +98,10 @@ function AboutMe() {
    pic: tailwind
   },
   {
+   name: 'Three JS',
+   pic: threejspic
+  },
+  {
    name: 'TypreScript',
    pic: tspic
   }
@@ -104,45 +115,45 @@ function AboutMe() {
     </div>
     <div className="mainInfo_body">
      <h2>Martin Casas</h2>
-     <h3 className='subtitle'>Acerca de mi:</h3>
-     <p>Tengo 24 años y soy oriundo de Cordoba Capital, Argentina. Empece a estudiar programacion en 2021 con una orientacion hacia el Front-End. Capitalizo mis conocimientos en React pero me considero abierto a cualquier tecnologia.</p>
+     <h3 className='subtitle'>{props.content.titleone}</h3>
+     <p>{props.content.intro}</p>
     </div>
    </div>
    <div className="langs">
-    <h3 className='subtitle'>Idiomas:</h3>
+    <h3 className='subtitle'>{props.content.titletwo}</h3>
     <div className="langs_cont">
      <div className="langs_item">
       <img className='langs_flag' src={usaflag} alt="" />
-      <p className='langs_name'>Ingles</p>
-      <p className="langs_q">Nativo</p>
+      <p className='langs_name'>{props.content.langone}</p>
+      <p className="langs_q">{props.content.native}</p>
      </div>
      <div className="langs_item">
       <img className='langs_flag' src={spainflag} alt="" />
-      <p className='langs_name'>Español</p>
-      <p className="langs_q">Nativo</p>
+      <p className='langs_name'>{props.content.langtwo}</p>
+      <p className="langs_q">{props.content.native}</p>
      </div>
      <div className="langs_item">
       <img className='langs_flag' src={franceflag} alt="" />
-      <p className='langs_name'>Frances</p>
-      <p className="langs_q">Basico</p>
+      <p className='langs_name'>{props.content.langthree}</p>
+      <p className="langs_q">{props.content.basic}</p>
      </div>
      <div className="langs_item">
       <img className='langs_flag' src={brazilflag} alt="" />
-      <p className='langs_name'>Portugues</p>
-      <p className="langs_q">Basico</p>
+      <p className='langs_name'>{props.content.langfour}</p>
+      <p className="langs_q">{props.content.basic}</p>
      </div>
 
     </div>
    </div>
    <div className="formation">
-    <h3 className='subtitle'>Formacion:</h3>
-    <h4>Airont Labs bootcamp:</h4>
-    <p>Airont Labs es una empresa que organizo junto con Altimetrik un bootcamp para desarrolladores Front End. Durante 14 semanas se enseñaron conceptos desde Vainilla JS hasta React JS culminando con un proyecto de pagina web en React.</p>
-    <h3 className='subtitle'>Experiencia:</h3>
+    <h3 className='subtitle'>{props.content.titlethree}</h3>
+    <h4>{props.content.studyone}</h4>
+    <p>{props.content.studyoneintro}</p>
+    <h3 className='subtitle'>{props.content.titlefour}</h3>
     <h4>No Country:</h4>
-    <p>No Country es una ONG que conecta estudiantes de programacion y organizan proyectos reales con grupos con metodologias AGILE. Programe para dos proyectos y fui Team Leader para un total de seis equipos. Sigo realizando proyectos con su organizacion. Luego de superar la primera etapa 'Cohorte' y luego la etapa de 'Seleccionado' otorgan un certificado de cumplimiento e incluyen a una bolsa de trabajo con distintas empresas conectadas.</p>
+    <p>{props.content.expone}</p>
    </div>
-   <h3 className='subtitle'>Cursos y certificaciomes:</h3>
+   <h3 className='subtitle'>{props.content.titlefive}</h3>
    <div className='courses'>
     <div className="courses_div">
      <div className="courses_item">
@@ -169,11 +180,11 @@ function AboutMe() {
      </div>
      <div className="courses_item">
       <img src={nocountry} alt="No Country" />
-      <a href="https://www.w3schools.com" target="_blank"  rel='noreferrer' className='courses_course'><p>Certificado de Seleccionado <img src={newTab} alt="new tab" className='newTab' /></p></a>
+      <a href="https://www.w3schools.com" target="_blank"  rel='noreferrer' className='courses_course'><p>{props.content.nocountry} <img src={newTab} alt="new tab" className='newTab' /></p></a>
      </div>
     </div>
    </div>
-   <h4 className='subtitle'>Tecnologias:</h4>
+   <h4 className='subtitle'>{props.content.titlesix}</h4>
    <div className="Techs">
     <div className="Techs_holder">
      {techArr.map((element) => {
