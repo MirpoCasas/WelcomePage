@@ -21,6 +21,7 @@ function App() {
       proyects: {
         intro: "These are my proyects",
         movieFin: "This website shows recommended movies based on The Movie Database API. It was made as part of Airont Labs' bootcamp and later re-made, from Vainilla JS to React JS.",
+        better: "This website is a landing page for my website building services. It's built on React JS with SASS. I enjoyed using more videos to add motion.",
         todo: "This proyect will be developed in the coming weeks! Contact me if you wish to know more."
       },
       aboutme: {
@@ -55,6 +56,7 @@ function App() {
       proyects: {
         intro: "Estos son mis proyectos",
         movieFin: "Este sitio web recomienda peliculas basado en la API de The Movie DataBase. Esta hecha en originalmente Vainilla JS y fue re-hecha en React.",
+        better: "Este sitio web es para promocionar mis servicios de diseño y desarrollo web. Esta hecha con React JS y SASS. Me gusto usar videos para añadir movimiento a mis diseños.",
         todo: "Este proyecto se va a desarrollar en las proximas semanas! Ponte en contacto conmigo si quieres saber mas."
       },
       aboutme: {
