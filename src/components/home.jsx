@@ -7,6 +7,7 @@ import linkedinlogo from '../assets/linkedinlogo.svg'
 import githublogo from '../assets/github.svg'
 import arflag from '../assets/arflag.svg'
 import PropTypes from 'prop-types'
+import {motion} from 'framer-motion'
 
 
 export default function Home(props) {
@@ -14,6 +15,22 @@ export default function Home(props) {
  Home.propTypes = {
   content: PropTypes.object.isRequired
  }
+
+ const variants = {
+    start: {
+        y: -100,
+        opacity: 0
+    },
+    end: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            ease: "easeInOut"
+        }
+    }
+}
+
 
  return (
   <div className="home">
@@ -24,10 +41,10 @@ export default function Home(props) {
    </div>
    <div className='home_first pagePart'>
     <p className="">{props.content.welcomeone}<img src={arflag} alt="Argentina flag" className='ArFlag'/>{props.content.welcometwo}</p>
-    <img className='fade-in-bottom home_img' src={home1} alt="" />
+    <motion.img className='home_img' src={home1} alt="" variants={variants} initial='start' whileInView='end' viewport={{once: true}}/>
    </div>
    <div className='home_second pagePart'>
-    <img className='fade-in-bottom home_img' src={home2} alt="" />
+    <motion.img className= 'home_img' src={home2} alt="" variants={variants} initial='start' whileInView='end' viewport={{once: true}}/>
     <div className='pack'>
      <h2>{props.content.port}</h2>
      <Link to='/proyects'>
@@ -48,10 +65,10 @@ export default function Home(props) {
      <button>Info</button>
      </Link>
     </div>
-    <img className="home_img" src={home3} alt="" />
+    <motion.img className="home_img" src={home3} alt="" variants={variants} initial='start' whileInView='end' viewport={{once: true}}/>
    </div>
    <div className='home_fourth pagePart'>
-    <img className='fade-in-bottom contact_img home_img' src={home4} alt="" />
+    <motion.img className='fade-in-bottom contact_img home_img' src={home4} alt="" variants={variants} initial='start' whileInView='end' viewport={{once: true}}/>
     <div className='contact'>
      <h2 className="">{props.content.cont}</h2>
      <a href="https://www.linkedin.com/in/martinfcasas/" target="_blank" rel='noreferrer'><img src={linkedinlogo} alt="LinkedIn" className='contact_logo'/>Linkedin</a>
