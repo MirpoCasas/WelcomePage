@@ -1,0 +1,213 @@
+/* Projects */
+
+.proyects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proyects_first {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 54px;
+  text-align: center;
+
+  img {
+    z-index: -2;
+  }
+}
+
+.newProyectApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0px;
+  gap: 30px;
+}
+
+.viewer {
+  width: 60vw;
+  height: 900px;
+  background-color: rgba(199, 90, 90, 0.137);
+  border-radius: 50px;
+  border: solid black 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px;
+  box-sizing: border-box;
+
+  h3 {
+    font-size: 3em;
+    margin: 0;
+  }
+
+  img {
+    height: 370px;
+  }
+
+  p {
+    font-size: 32px;
+  }
+}
+
+.viewer_buttonHolder{
+  display: flex;
+  gap: 10px;
+  button{
+    font-size: 2.5em;
+  }
+}
+
+.sidebar {
+  display: flex;
+}
+
+.Button {
+  width: 50px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SidebarViewport {
+  width: 40vw;
+  overflow: hidden;
+  margin: 0px 40px;
+}
+
+.proyectButtons {
+  display: flex;
+  position: relative;
+  left: 0px;
+  gap: 10px;
+}
+
+.proyectButton {
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  flex-shrink: 0;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  border: solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+}
+
+.Next {
+  img {
+    transform: rotate(90deg);
+  }
+}
+
+.Prev {
+  img {
+    transform: rotate(-90deg);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and BELOW) */
+@media only screen and (max-width: 800px) {
+  button {
+    width: 60vw;
+    font-size: 34px;
+    -webkit-text-stroke: 1px black;
+  }
+  
+  /* PROYECTS */
+
+  .proyects_first {
+    margin-top: 100px;
+    flex-direction: column;
+
+    font-size: 44px;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+
+    img {
+      width: 90vw;
+      height: 90vw;
+    }
+  }
+
+  .viewer {
+    width: 90vw;
+    p{
+      font-size: 1.5em;
+    }
+    img {
+      height: auto;
+      max-height: 50%;
+      max-width: 90%;
+    }
+  }
+
+  .SidebarViewport {
+    width: 70vw;
+    margin: 0px;
+  }
+
+  .proyectButton{
+    width: 150px;
+    height: 100px;
+    font-size: 1em;
+  }
+  
+  .Button{
+    height: 100px;
+  }
+  .viewer_buttonHolder{
+    flex-direction: column;
+    button{
+      font-size: 2em;
+    }
+  }
+}
+
+/* Large devices (Tab, smaller laptops/desktops, 1500 to 800) */
+@media only screen and (max-width: 1500px) and (min-width: 800px) {
+
+  /*Proyects*/
+
+  .viewer {
+    width: 70vw;
+  }
+
+  .SidebarViewport {
+    width: 60vw;
+  }
+
+  .viewer_buttonHolder{
+    flex-direction: column;
+    button{
+      font-size: 2em;
+    }
+  }
+ 
+}
+
+@media only screen and (min-width: 1900px) {
+}
+

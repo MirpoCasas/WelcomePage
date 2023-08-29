@@ -3,9 +3,9 @@
 }
 
 body {
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(241, 241, 241);
   margin: 0;
-  font-family: 'Alice', serif;
+  font-family: "Alice", serif;
   font-weight: 300;
   overflow-x: hidden;
 }
@@ -61,7 +61,7 @@ nav {
 }
 
 .nav_menu.active {
-  left: 0
+  left: 0;
 }
 
 .nav_menu_item {
@@ -81,12 +81,12 @@ nav {
   background-color: black;
 }
 
-nav>img {
+nav > img {
   width: 100px;
   height: 100px;
 }
 
-.langswitch{
+.langswitch {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,7 +191,6 @@ nav>img {
 
 .home_fourth {
   justify-content: space-around;
-
 }
 
 .contact_img {
@@ -206,7 +205,7 @@ nav>img {
 
   a,
   p {
-    font-family: 'Alice', serif;
+    font-family: "Alice", serif;
     font-size: 34px;
     margin: 20px 0px;
     display: flex;
@@ -221,7 +220,7 @@ nav>img {
     text-decoration: none;
   }
 
-  a:visited{
+  a:visited {
     text-decoration: none;
     color: black;
   }
@@ -237,110 +236,7 @@ nav>img {
   margin-right: 20px;
 }
 
-/* Projects */
 
-.proyects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.proyects_first {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 54px;
-  text-align: center;
-
-  img {
-    z-index: -2;
-  }
-}
-
-.newProyectApp{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px 0px;
-  gap: 30px;
-}
-
-.viewer{
-  width: 60vw;
-  height: 700px;
-  background-color: rgba(199, 90, 90, 0.137);
-  border-radius: 50px;
-  border: solid  black 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: 30px;
-  box-sizing: border-box;
-
-  h3{
-    font-size: 3em;
-    margin: 0;
-  }
-
-  img{
-    height: 60%;
-  }
-
-  p{
-    font-size: 32px;
-  }
-}
-.sidebar{
-  display: flex;
-}
-
-.Button{
-  width: 50px;
-  height: 150px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.SidebarViewport{
-  width: 40vw;
-  overflow: hidden;
-  margin: 0px 40px;
-}
-
-.proyectButtons{
-  display: flex;
-  position: relative;
-  left: 0px;
-  gap: 10px;
-}
-
-.proyectButton{
-  flex-shrink: 0;
-  width: 300px;
-  height: 150px;
-  border-radius: 10px;
-  border: solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.Next{
-  img{
-    transform: rotate(90deg);
-  }
-}
-
-.Prev{
-  img{
-    transform: rotate(-90deg);
-  }
-}
 
 /* About Me */
 
@@ -352,18 +248,37 @@ nav>img {
   display: flex;
 }
 
+.imgHolder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 2.5em;
+    width: fit-content;
+    img{
+      height: 40px;
+      width: auto;
+    }
+  }
+}
+
 .myPic {
   width: 300px;
   height: 300px;
 }
 
 .mainInfo_body {
-
   padding: 50px;
 
   h2 {
     font-size: 64px;
-    font-family: 'Zilla Slab Highlight', cursive;
+    font-family: "Zilla Slab Highlight", cursive;
     font-weight: 400;
     margin: 0;
   }
@@ -373,49 +288,48 @@ nav>img {
   }
 }
 
-.langs_cont{
+.langs_cont {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.langs_item{
+.langs_item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0px 50px;
 }
 
-.langs_flag{
+.langs_flag {
   width: 100px;
 }
 
-.langs_name{
+.langs_name {
   font-size: 28px;
   margin: 0;
 }
 
-.langs_q{
+.langs_q {
   margin: 0;
 }
 
 .subtitle {
   font-size: 64px;
-  font-family: 'Zilla Slab Highlight', cursive;
+  font-family: "Zilla Slab Highlight", cursive;
+  margin: 25px 0px;
 }
 
 .formation {
   h4 {
     font-size: 44px;
     margin: 0;
-
   }
 
   p {
     font-size: 34px;
   }
 }
-
 
 /* About me - Courses */
 
@@ -450,14 +364,12 @@ nav>img {
   gap: 5px;
   text-decoration: none;
 
-
   p {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
     color: black;
-
   }
 }
 
@@ -478,7 +390,7 @@ nav>img {
 /* About me - Techs */
 
 .Techs h4 {
-  font-family: 'Zilla Slab Highlight', cursive;
+  font-family: "Zilla Slab Highlight", cursive;
 }
 
 .Techs_holder {
@@ -497,10 +409,115 @@ nav>img {
   height: 150px;
 }
 
+/* About me - Skills*/
+
+.Skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Skills_item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  h4 {
+    font-size: 44px;
+    margin: 0;
+  }
+
+  p {
+    font-size: 2em;
+  }
+}
+
+.certification{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  
+  button{
+    font-size: 2em;
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
+.gyfted{
+  span{
+    color: #2f80ed;
+  }
+}
+
+.certificationText{
+  font-size: 24px;
+  margin: 0;
+  align-self: center;
+  color: #32648d;
+
+
+}
+
+.Gcert{
+  width: 100px
+}
+
+/* about me - interest*/
+
+.interests {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.interests_holder{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.moviesHolder {
+  width: 500px;
+  height: 600px;
+  border: solid black 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movies {
+  display: flex;
+  height: 430px;
+  width: 350px;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie {
+  width: 300px;
+  height: 430px;
+  position: absolute;
+}
+
+.musics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 500px;
+  height: 600px;
+}
+
+.musicDisk {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+}
 
 /* Small devices (portrait tablets and large phones, 600px and BELOW) */
 @media only screen and (max-width: 800px) {
-
   button {
     width: 60vw;
     font-size: 34px;
@@ -527,7 +544,6 @@ nav>img {
     z-index: 3;
     left: -1000px;
   }
-
 
   .home.active {
     overflow: hidden;
@@ -607,25 +623,35 @@ nav>img {
     img {
       width: 90vw;
       height: 90vw;
-
     }
-
   }
 
-  .viewer{
+  .viewer {
     width: 90vw;
-    img{
+    p{
+      font-size: 1.5em;
+    }
+    img {
       height: auto;
       max-height: 50%;
       max-width: 90%;
     }
   }
 
-  .SidebarViewport{
+  .SidebarViewport {
     width: 70vw;
     margin: 0px;
   }
 
+  .proyectButton{
+    width: 150px;
+    height: 100px;
+    font-size: 1em;
+  }
+
+  .Button{
+    height: 100px;
+  }
 
   /* ABOUT ME */
 
@@ -650,27 +676,26 @@ nav>img {
   }
 
   .mainInfo_body {
-  
     padding: 15px;
     p {
       font-size: 28px;
     }
   }
 
-  .langs_cont{
+  .langs_cont {
     justify-content: space-evenly;
     gap: 10px;
   }
 
-  .langs_flag{
+  .langs_flag {
     width: 50px;
   }
 
-  .langs_name{
+  .langs_name {
     font-size: 24px;
   }
 
-  .langs_q{
+  .langs_q {
     font-size: 18px;
   }
 
@@ -689,7 +714,6 @@ nav>img {
     }
 
     /* Courses */
-
   }
 
   .courses {
@@ -718,7 +742,6 @@ nav>img {
   }
 
   .Techs_item {
-
     p {
       font-size: 24px;
       margin: 5px;
@@ -733,12 +756,10 @@ nav>img {
 
 /* Large devices (Tab, smaller laptops/desktops, 1500 to 800) */
 @media only screen and (max-width: 1500px) and (min-width: 800px) {
-
   /* Home */
 
   .nav_menu {
     background-color: rgba(255, 255, 255, 0.534);
-
   }
 
   .home_first {
@@ -757,14 +778,13 @@ nav>img {
     width: 48px;
   }
 
-
   /*Proyects*/
 
   .viewer {
     width: 70vw;
   }
 
-  .SidebarViewport{
+  .SidebarViewport {
     width: 60vw;
   }
 
@@ -799,9 +819,9 @@ nav>img {
   .Techs_holder {
     width: 800px;
 
-    p {}
+    p {
+    }
   }
-
 }
 
 @media only screen and (min-width: 1900px) {
@@ -818,5 +838,4 @@ nav>img {
     left: -2500px;
     transition: 0.5s all;
   }
-  
 }
