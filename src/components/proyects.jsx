@@ -52,7 +52,7 @@ export default function Proyects(props) {
 
   const [buttonIndex, setButtonIndex] = useState(0);
   const [buttonWidth, setButtonWidht] = useState(300);
-  const [buttonport, setButtonport] = useState('40vw');
+  const [buttonport, setButtonport] = useState("40vw");
 
   const variantsPic = {
     start: {
@@ -73,10 +73,10 @@ export default function Proyects(props) {
     console.log("resize");
     if (window.innerWidth < 801) {
       setButtonWidht(156);
-      setButtonport('70vw');
+      setButtonport("70vw");
     } else {
       setButtonWidht(300);
-      setButtonport('40vw');
+      setButtonport("40vw");
     }
   };
 
@@ -110,7 +110,6 @@ export default function Proyects(props) {
     }
   }
 
-  
   function handleAnimation() {
     const gaplenth = 16;
     let firstoffset = buttonWidth * 0.5 + buttonWidth + gaplenth;
@@ -122,19 +121,25 @@ export default function Proyects(props) {
         };
       case 1:
         return {
-          x: `calc(${buttonport+'*.5'} - ${firstoffset}px)`,
+          x: `calc(${buttonport + "*.5"} - ${firstoffset}px)`,
         };
       case 2:
         return {
-          x: `calc(${buttonport+'*.5'} - ${firstoffset + subsequentoffset}px)`,
+          x: `calc(${buttonport + "*.5"} - ${
+            firstoffset + subsequentoffset
+          }px)`,
         };
       case 3:
         return {
-          x: `calc(${buttonport+'*.5'} - ${firstoffset + subsequentoffset * 2}px)`,
+          x: `calc(${buttonport + "*.5"} - ${
+            firstoffset + subsequentoffset * 2
+          }px)`,
         };
       case 4:
         return {
-          x: `calc(${buttonport+'*.5'} - ${firstoffset + subsequentoffset * 3 - buttonWidth*.6 }px)`,
+          x: `calc(${buttonport + "*.5"} - ${
+            firstoffset + subsequentoffset * 3 - buttonWidth * 0.6
+          }px)`,
         };
       default:
         break;
@@ -163,8 +168,16 @@ export default function Proyects(props) {
           <img src={preview.img} alt="" />
           <p>{preview.desc}</p>
           <div className={styles.viewer_buttonHolder}>
-            {preview.link && <button href=''>View website deployed</button>}
-            {preview.repolink && <button href=''>View code on Github</button>}
+            <a href={preview.link} target="_blank" rel="noreferrer" > 
+              {preview.link && (
+                <button>View website deployed</button>
+              )}
+            </a>
+            <a href={preview.repolink} target="_blank" rel="noreferrer">
+              {preview.repolink && (
+                <button>View code on Github</button>
+              )}
+            </a>
           </div>
         </div>
         <div className={styles.sidebar}>

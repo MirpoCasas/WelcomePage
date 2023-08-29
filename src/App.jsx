@@ -60,7 +60,7 @@ function App() {
       lang: "es",
       home: {
         welcomeone: "Dev. Argentino",
-        welcometwo: "estudiante de programación y traducción. Interesado en arte, cine, diseño e historia",
+        welcometwo: "estudiante de programación y traducción. Interesado en arte, cine, diseño e historia.",
         port: "Observa mis proyectos",
         about: "Acerca de mí",
         cont: "Contacto"
