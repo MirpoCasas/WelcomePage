@@ -1,0 +1,105 @@
+{
+  "en": {
+    "Preface": {
+      "Title": "Preface:",
+      "Content": "I am a developer from Cordoba, Argentina. Learning to code Since 2021",
+      "Button": "See more",
+      "CatText": "If you laugh, you have to hire me."
+    },
+    "Portfolio": {
+      "Desc": "These are my proyects!",
+      "First": {
+        "Title": "MOVIEfinder",
+        "Content": "This was a project made for airont labs bootcamp. It's the project I learned the most on, making every interaction without the usage of libreries of frameworks."
+      },
+      "Second": {
+        "Title": "ManaGym",
+        "Content": "This was a project made for a No Country Emulation. It's a gym management app, with different roles and permissions for each user."
+      },
+      "Third": {
+        "Title": "BetterDesigns",
+        "Content": "This is a concept Website I made for promoting my services as a web developer / designer."
+      }
+    },
+    "Experiences": {
+      "Title": "Experiences:",
+      "First": {
+        "Title": "Non Related",
+        "Content": "I have worked in a lot of different areas, from a call center to a restaurant. I have learned a lot from each one of them, and I think that's what makes me a better developer."
+      },
+      "Second": {
+        "Title": "No Country",
+        "Content": "This organization groups developers looking for work experience and these build mock proyects to experience a real work environment. I did 3 proyects with them as a developer and managed 6 teams as Team Leader."
+      },
+      "Third": {
+        "Title": "BetterDesigns",
+        "Content": "I am currently freelancing under this name. I am gaining a lot of experience managing clients and working with them to achieve their goals."
+      }
+    },
+    "Skills": {
+      "Title": "Skills:"
+    },
+    "Contact": {
+      "Title": "Contact:",
+      "Greet": "Thanks for visiting!"
+    },
+    "Modal": {
+      "First": "My name is Martin Casas. I started to learn to on 2021, intrigued by the possibilities of working in IT after changing career paths.",
+      "Second": "I speak English natively (C2 Certificate from EF), and a bit of Portuguese and French.",
+      "Third": "I am currently studying English Translation and wish to merge this paths together at some point!",
+      "Fourth": "I am a passionate fan of many things! I consider myself friendly, organized and with a keen interest in developing creative solutions with a focus on optimization!"
+    }
+  },
+  "es": {
+    "Preface": {
+      "Title": "Prefacio:",
+      "Content": "Soy un desarrollador de Córdoba, Argentina. Aprendiendo a programar desde 2021",
+      "Button": "Ver más",
+      "CatText": "Si te reís, me tenés que contratar."
+    },
+    "Portfolio": {
+      "Desc": "¡Estos son mis proyectos!",
+      "First": {
+        "Title": "MOVIEfinder",
+        "Content": "Este fue un proyecto hecho para el bootcamp de airont labs. Es el proyecto en el que más aprendí, haciendo cada interacción sin el uso de librerías o frameworks."
+      },
+      "Second": {
+        "Title": "ManaGym",
+        "Content": "Este fue un proyecto hecho para una No Country Emulation. Es una app de gestión de gimnasios, con diferentes roles y permisos para cada usuario."
+      },
+      "Third": {
+        "Title": "BetterDesigns",
+        "Content": "Esta es una página web conceptual que hice para promocionar mis servicios como desarrollador / diseñador web."
+      }
+    },
+    "Experiences": {
+      "Title": "Experiencia:",
+      "First": {
+        "Title": "No Relacionadas",
+        "Content": "He trabajado en muchas áreas diferentes, desde un call center hasta un restaurante. Aprendí mucho de cada uno de ellos, y creo que eso es lo que me hace un mejor desarrollador."
+      },
+      "Second": {
+        "Title": "No Country",
+        "Content": "Esta organización agrupa a desarrolladores que buscan experiencia laboral y estos construyen proyectos falsos para experimentar un entorno de trabajo real. Hice 3 proyectos con ellos como desarrollador y gestioné 6 equipos como líder de equipo."
+      },
+      "Third": {
+        "Title": "BetterDesigns",
+        "Content": "Actualmente estoy trabajando como freelancer bajo este nombre. Estoy ganando mucha experiencia gestionando clientes y trabajando con ellos para lograr sus objetivos."
+      }
+    },
+    "Skills": {
+      "Title": "Habilidades:"
+    },
+    "Contact": {
+      "Title": "Contacto:",
+      "Greet": "¡Gracias por visitar!"
+    },
+    "Modal": {
+      "First": "Mi nombre es Martin Casas. Empecé a aprender a programar en 2021, intrigado por las posibilidades de trabajar en IT después de cambiar de carrera.",
+      "Second": "Hablo inglés nativamente (Certificado C2 de EF), y un poco de portugués y francés.",
+      "Third": "¡Actualmente estoy estudiando Traducción de Inglés y deseo fusionar estos caminos en algún momento!",
+      "Fourth": "¡Soy un apasionado fan de muchas cosas! ¡Me considero amigable, organizado y con un gran interés en desarrollar soluciones creativas con un enfoque en la optimización!"
+    }
+
+  }
+}
