@@ -136,26 +136,26 @@ export default function Home() {
 
   const variantsItemMob = {
     open: {
-      height: "380px",
+      maxHeight: "580px",
     },
     closed: {
-      height: "40px",
+      maxHeight: "50px",
     },
   };
   const variantsItemTab = {
     open: {
-      height: "330px",
+      maxHeight: "530px",
     },
     closed: {
-      height: "50px",
+      maxHeight: "60px",
     },
   };
   const variantsItemDesk = {
     open: {
-      height: "400px",
+      maxHeight: "500px",
     },
     closed: {
-      height: "66px",
+      maxHeight: "70px"
     },
   };
 
