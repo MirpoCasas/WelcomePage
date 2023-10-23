@@ -33,10 +33,10 @@ type ExperiencesItemProps = {
   desc: string;
   variants: {
     open: {
-      height: string;
+      maxHeight: string;
     };
     closed: {
-      height: string;
+      maxHeight: string;
     };
   };
 };
@@ -56,19 +56,10 @@ function ExperiencesItem(props: ExperiencesItemProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <motion.div
-      className={styles.Experiences_item}
-      animate={isOpen ? "open" : "closed"}
-      variants={props.variants}
-    >
-      <div
-        className={styles.Experiences_title}
-        onClick={() => setIsOpen(!isOpen)}
-      >
+    <motion.div className={styles.Experiences_item} animate={isOpen ? "open" : "closed"} variants={props.variants}>
+      <div className={styles.Experiences_title} onClick={() => setIsOpen(!isOpen)}>
         <h3>{props.title}</h3>
-        <motion.div
-          animate={isOpen ? { rotate: "180deg" } : { rotate: "0deg" }}
-        >
+        <motion.div animate={isOpen ? { rotate: "180deg" } : { rotate: "0deg" }}>
           <Image src={navarrow} alt="nav arrow"></Image>
         </motion.div>
       </div>
@@ -79,50 +70,17 @@ function ExperiencesItem(props: ExperiencesItemProps) {
 
 function PortfolioItem(props: PortfolioItemProps) {
   return (
-    <div
-      className={styles.Portfolio_item}
-      style={{ backgroundImage: `url(${props.img.src})` }}
-    >
+    <div className={styles.Portfolio_item} style={{ backgroundImage: `url(${props.img.src})` }}>
       <div className={styles.Portfolio_gradient}>
         <h3>{props.title}</h3>
         <p>{props.desc}</p>
         <div className={styles.Portfolio_bottom}>
           <div className={styles.TechImgs}>
-            {props.techs.includes("javascript") && (
-              <Image
-                className={styles.TechImg}
-                src={javascriptpic}
-                alt="JavaScript"
-              ></Image>
-            )}
-            {props.techs.includes("typescript") && (
-              <Image
-                className={styles.TechImg}
-                src={typescriptpic}
-                alt="Typescript"
-              ></Image>
-            )}
-            {props.techs.includes("next") && (
-              <Image
-                className={styles.TechImg}
-                src={nextjspic}
-                alt="Next JS"
-              ></Image>
-            )}
-            {props.techs.includes("react") && (
-              <Image
-                className={styles.TechImg}
-                src={reactpic}
-                alt="react"
-              ></Image>
-            )}
-            {props.techs.includes("sass") && (
-              <Image
-                className={styles.TechImg}
-                src={sasspic}
-                alt="Sass"
-              ></Image>
-            )}
+            {props.techs.includes("javascript") && <Image className={styles.TechImg} src={javascriptpic} alt="JavaScript"></Image>}
+            {props.techs.includes("typescript") && <Image className={styles.TechImg} src={typescriptpic} alt="Typescript"></Image>}
+            {props.techs.includes("next") && <Image className={styles.TechImg} src={nextjspic} alt="Next JS"></Image>}
+            {props.techs.includes("react") && <Image className={styles.TechImg} src={reactpic} alt="react"></Image>}
+            {props.techs.includes("sass") && <Image className={styles.TechImg} src={sasspic} alt="Sass"></Image>}
           </div>
           <div className={styles.Portfolio_buttons}></div>
           {props.srccode && (
@@ -178,35 +136,33 @@ export default function Home() {
 
   const variantsItemMob = {
     open: {
-      height: "380px",
+      maxHeight: "580px",
     },
     closed: {
-      height: "40px",
+      maxHeight: "50px",
     },
   };
   const variantsItemTab = {
     open: {
-      height: "330px",
+      maxHeight: "530px",
     },
     closed: {
-      height: "50px",
+      maxHeight: "60px",
     },
   };
   const variantsItemDesk = {
     open: {
-      height: "400px",
+      maxHeight: "500px",
     },
     closed: {
-      height: "66px",
+      maxHeight: "70px"
     },
   };
 
   const [isOpen, setIsOpen] = useState(false);
   const [isLoader, setIsLoader] = useState(true);
   const [carrouselleIndex, setCarrouselleIndex] = useState(1);
-  const [carrouselleVariants, setCarrouselleVariants] = useState(
-    carrouselleVariantsMob
-  );
+  const [carrouselleVariants, setCarrouselleVariants] = useState(carrouselleVariantsMob);
   const [variantsItem, setVariantsItem] = useState(variantsItemMob);
   const [dimmensions, setDimmensions] = useState([2000, 930]);
   const [pageContent, setPageContent] = useState(pagecontent.es);
@@ -241,7 +197,7 @@ export default function Home() {
       setCarrouselleVariants(carrouselleVariantsMob);
       setVariantsItem(variantsItemMob);
     }
-  };
+  }
 
   // rezise use effect
   useEffect(() => {
@@ -300,10 +256,8 @@ export default function Home() {
       </div>
       <p className={`${styles.rightToLeft} ${bebas.className}`}>
         {" "}
-        || OPEN TO: FULLSTACK - FRONT END - BACKEND || OPEN TO: FULLSTACK -
-        FRONT END - BACKEND || OPEN TO: FULLSTACK - FRONT END - BACKEND || OPEN
-        TO: FULLSTACK - FRONT END - BACKEND || OPEN TO: FULLSTACK - FRONT END -
-        BACKEND || OPEN TO: FULLSTACK - FRONT END - BACKEND
+        || OPEN TO: FULLSTACK - FRONT END - BACKEND || OPEN TO: FULLSTACK - FRONT END - BACKEND || OPEN TO: FULLSTACK - FRONT END - BACKEND || OPEN TO: FULLSTACK - FRONT END - BACKEND || OPEN TO:
+        FULLSTACK - FRONT END - BACKEND || OPEN TO: FULLSTACK - FRONT END - BACKEND
       </p>
 
       <div className={styles.Preface}>
@@ -312,13 +266,9 @@ export default function Home() {
           <p className={styles.Preface_text}>{pageContent.Preface.Content}</p>
           <div className={styles.Preface_cat}>
             <Image src={catgif} alt="coding cat"></Image>
-            <p>{pageContent.Preface.CatText}</p>
           </div>
         </div>
-        <button
-          className={`${azert.className} ${styles.Btn}`}
-          onClick={() => setIsOpen(true)}
-        >
+        <button className={`${azert.className} ${styles.Btn}`} onClick={() => setIsOpen(true)}>
           {pageContent.Preface.Button}
         </button>
       </div>
@@ -328,25 +278,10 @@ export default function Home() {
         <p style={{ fontSize: ".5em" }}>{`${carrouselleIndex} / 3`}</p>
         <div className={styles.Portfolio_carrouselle}>
           <div className={styles.Portfolio_nav}>
-            <Image
-              src={navarrow}
-              alt="nav arrow"
-              style={{ rotate: "90deg" }}
-              onClick={() => downIndex()}
-            ></Image>
-            <Image
-              src={navarrow}
-              alt="nav arrow"
-              style={{ rotate: "-90deg" }}
-              onClick={() => upIndex()}
-            ></Image>
+            <Image src={navarrow} alt="nav arrow" style={{ rotate: "90deg" }} onClick={() => downIndex()}></Image>
+            <Image src={navarrow} alt="nav arrow" style={{ rotate: "-90deg" }} onClick={() => upIndex()}></Image>
           </div>
-          <motion.div
-            className={styles.Portfolio_items}
-            initial="1"
-            animate={`${carrouselleIndex}`}
-            variants={carrouselleVariants}
-          >
+          <motion.div className={styles.Portfolio_items} initial="1" animate={`${carrouselleIndex}`} variants={carrouselleVariants}>
             <PortfolioItem
               title={pageContent.Portfolio.First.Title}
               desc={pageContent.Portfolio.First.Content}
@@ -377,23 +312,11 @@ export default function Home() {
       <div className={styles.Experiences}>
         <h2>{pageContent.Experiences.Title}</h2>
         <div className={styles.Experiences_items}>
-          <ExperiencesItem
-            title={pageContent.Experiences.First.Title}
-            variants={variantsItem}
-            desc={pageContent.Experiences.First.Content}
-          />
+          <ExperiencesItem title={pageContent.Experiences.First.Title} variants={variantsItem} desc={pageContent.Experiences.First.Content} />
           <div className={styles.Bar}></div>
-          <ExperiencesItem
-            title={pageContent.Experiences.Second.Title}
-            variants={variantsItem}
-            desc={pageContent.Experiences.Second.Content}
-          />
+          <ExperiencesItem title={pageContent.Experiences.Second.Title} variants={variantsItem} desc={pageContent.Experiences.Second.Content} />
           <div className={styles.Bar}></div>
-          <ExperiencesItem
-            title={pageContent.Experiences.Third.Title}
-            variants={variantsItem}
-            desc={pageContent.Experiences.Third.Content}
-          />
+          <ExperiencesItem title={pageContent.Experiences.Third.Title} variants={variantsItem} desc={pageContent.Experiences.Third.Content} />
           <div className={styles.Bar}></div>
         </div>
       </div>
@@ -418,48 +341,34 @@ export default function Home() {
         <div className={styles.Contact_main}>
           <h2>{pageContent.Contact.Title}</h2>
           <div className={styles.Contact_links}>
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/MirpoCasas"
-            >
+            <Link target="_blank" rel="noopener noreferrer" href="https://github.com/MirpoCasas">
               Github
             </Link>
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/martinfcasas/"
-            >
+            <Link target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/martinfcasas/">
               LinkedIn
             </Link>
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://docs.google.com/document/d/15Yh0JehLV1lT_BOYHknOFt2_RHZbrShW/edit?usp=sharing&ouid=118097342686006691495&rtpof=true&sd=true"
-            >
+            <Link target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/15Yh0JehLV1lT_BOYHknOFt2_RHZbrShW/edit?usp=sharing&ouid=118097342686006691495&rtpof=true&sd=true">
               CV download
             </Link>
             <p className={styles.Contact_mail}> Email: mirpocasas@gmail.com</p>
           </div>
         </div>
         <p>{pageContent.Contact.Greet}</p>
-        <Image
-          src={byecat}
-          alt="cat goodbye"
-          className={styles.goodbyecat}
-        ></Image>
+        <Image src={byecat} alt="cat goodbye" className={styles.goodbyecat}></Image>
       </div>
       {isOpen && (
         <Modal handleClose={() => closingModal()}>
-          <p>{pageContent.Modal.First}</p>
-          <p>{pageContent.Modal.Second}</p>
-          <p>{pageContent.Modal.Third}</p>
-          <Image
-            src={catonpc}
-            alt="cat on pc"
-            style={{ height: "250px", width: "auto" }}
-          ></Image>
-          <p>{pageContent.Modal.Fourth}</p>
+          <div className={styles.modal_me}>
+            <div className={styles.modal_contone}>
+              <Image src={catonpc} alt="cat on pc"></Image>
+            </div>
+            <div className={styles.modal_conttwo}>
+              <p>{pageContent.Modal.First}</p>
+              <p>{pageContent.Modal.Second}</p>
+              <p>{pageContent.Modal.Third}</p>
+              <p>{pageContent.Modal.Fourth}</p>
+            </div>
+          </div>
         </Modal>
       )}
     </main>
