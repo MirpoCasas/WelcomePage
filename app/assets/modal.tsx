@@ -1,6 +1,9 @@
 import { useEffect, ReactNode } from "react";
 import ReactPortal from "./reactportal";
 import styles from"./modalStyles.module.scss";
+import { Azeret_Mono } from "next/font/google";
+
+const Azert = Azeret_Mono({subsets: ['latin'], weight: ['400']});
 
 type modalProps = {
 	children: ReactNode;
@@ -20,7 +23,7 @@ function Modal({ children , handleClose }: modalProps) {
 
 	return (
 		<ReactPortal wrapperId="react-portal-modal-container">
-				<div className={styles.modal}>
+				<div className={`${Azert.className} ${styles.modal}`}>
 					<div className={styles.modal_content}>
 					<button onClick={handleClose} className={styles.close_btn}>
 						X
