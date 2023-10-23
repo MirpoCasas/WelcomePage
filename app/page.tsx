@@ -33,10 +33,10 @@ type ExperiencesItemProps = {
   desc: string;
   variants: {
     open: {
-      height: string;
+      maxHeight: string;
     };
     closed: {
-      height: string;
+      maxHeight: string;
     };
   };
 };
