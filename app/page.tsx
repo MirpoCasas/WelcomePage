@@ -21,6 +21,7 @@ import typescriptpic from "@/public/techs/typescript-svgrepo-com.svg";
 import sasspic from "@/public/techs/sass-svgrepo-com.svg";
 import reactpic from "@/public/techs/react-svgrepo-com.svg";
 import nextjspic from "@/public/techs/next-js-svgrepo-com.svg";
+import translate from "@/public/translate.svg"
 import pagecontent from "@/public/pagecontent.json";
 import { useLangContext } from "./assets/langContext";
 import { useOverflowContext } from "./assets/overflowContext";
@@ -166,8 +167,15 @@ export default function Home() {
   const [variantsItem, setVariantsItem] = useState(variantsItemMob);
   const [dimmensions, setDimmensions] = useState([2000, 930]);
   const [pageContent, setPageContent] = useState(pagecontent.es);
-  const { lang } = useLangContext();
+  const { lang, setLang } = useLangContext();
   const { overflow, setOverflow } = useOverflowContext();
+  const [loading, setLoading] = useState(false);
+
+  const handleClick = () => {
+    setLoading(true);
+    setLang(lang === "en" ? 'es' : 'en')
+    setTimeout(() => setLoading(false), 1000); // hide after 2 seconds
+  };
 
   function upIndex() {
     if (carrouselleIndex === 3) {
@@ -246,6 +254,12 @@ export default function Home() {
 
   return (
     <main className={`${styles.main} ${azert.className}`}>
+      <div className={styles.translatebutton} onClick={handleClick}>
+        <button>
+        <Image src={translate} alt='Change Language'></Image>
+        </button>
+        {loading && <div className={styles.spinner}></div>}
+      </div>
       <div className={styles.Header}>
         <div className={styles.Header_name}>
           <h2 className={bebas.className}>WEB</h2>
@@ -330,11 +344,16 @@ export default function Home() {
           <p>-React JS</p>
           <p>-Redux</p>
           <p>-Next JS</p>
-          <p>-Node JS</p>
           <p>-Matter JS</p>
           <p>-Material UI</p>
           <p>-Framer Motion</p>
           <p>-Three JS</p>
+          <p>-Node JS</p>
+          <p>-Express JS</p>
+          <p>-GraphQL</p>
+          <p>-SQL</p>
+          <p>-MySQL</p>
+          <p>-MongoDB</p>
         </div>
       </div>
       <div className={styles.Contact}>
@@ -350,7 +369,7 @@ export default function Home() {
             <Link target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/15Yh0JehLV1lT_BOYHknOFt2_RHZbrShW/edit?usp=sharing&ouid=118097342686006691495&rtpof=true&sd=true">
               CV download
             </Link>
-            <p className={styles.Contact_mail}> Email: mirpocasas@gmail.com</p>
+            <p className={styles.Contact_mail}> Email: martincasasdev@gmail.com</p>
           </div>
         </div>
         <p>{pageContent.Contact.Greet}</p>
