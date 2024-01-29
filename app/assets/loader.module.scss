@@ -1,7 +1,7 @@
 .loader{
   width: 100vw;
   height: 100vh;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background-color);
   position: absolute;
   top: 0;
   z-index: 5;
@@ -27,7 +27,7 @@
 
 .greetLang{
   width: 180px;
-  border: solid rgba(0, 0, 0, 0.096) 1px;
+  border: solid var(--font-color) 1px;
   margin: 20px;
   border-radius: 20px;
   img{

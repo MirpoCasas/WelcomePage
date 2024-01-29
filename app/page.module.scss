@@ -1,5 +1,5 @@
 .main {
-  color: black;
+  color: var(--font-color);
   font-size: 24px;
   width: 100%;
   height: 100%;
@@ -9,6 +9,7 @@
 .translatebutton{
   display: flex;
   align-items: center;
+  position: absolute;
 
   button{
     background-color: transparent;
@@ -17,10 +18,15 @@
     outline: none;
     border: none;
   }
-  position: absolute;
   img{
     width: 100%;
     height: 100%;
+  }
+}
+
+[data-theme="dark"] .translatebutton{
+  img{
+    filter: invert(1);
   }
 }
 
@@ -41,22 +47,24 @@
 .Btn {
   width: max-content;
   background-color: transparent;
-  border: solid 2px black;
+  border: solid 2px var(--font-color);
   padding: 5px;
   border-radius: 5px;
   font-size: 1.5em;
+  color: var(--font-color);
 }
 .Btn_portfolio {
   width: max-content;
-  background-color: rgb(175, 175, 175);
-  border: solid 2px black;
+  background-color: var(--background-color);
+  border: solid 2px var(--font-color);
   padding: 5px;
   border-radius: 5px;
   font-size: 0.7em;
+  color: var(--font-color);
 }
 
 .Header {
-  color: white;
+  color: var(--background-color);
   height: 70dvh;
   margin-top: 50px;
   display: flex;
@@ -78,8 +86,8 @@
   h2 {
     position: absolute;
     font-size: 2.5em;
-    color: white;
-    -webkit-text-stroke: black 1px;
+    color: var(--background-color);
+    -webkit-text-stroke: var(--font-color) 1px;
     margin: 0;
   }
 
@@ -88,7 +96,7 @@
     font-size: 1.5em;
     z-index: 3;
     margin: 0;
-    color: black;
+    color: var(--font-color);
     font-weight: 800;
   }
   h2:first-of-type {
@@ -103,15 +111,15 @@
 }
 
 .rightToLeft {
-  color: black;
+  color: var(--font-color);
   font-weight: bold;
   width: max-content;
   font-size: 3em;
   animation: rightToLeft 10s infinite linear;
   margin: 0;
 
-  border-top: solid 3px black;
-  border-bottom: solid 3px black;
+  border-top: solid 3px var(--font-color);
+  border-bottom: solid 3px var(--font-color);
 }
 
 @keyframes rightToLeft {
@@ -140,7 +148,6 @@
     font-size: 0.3em;
   }
 }
-
 
 
 .Portfolio {
@@ -188,7 +195,7 @@
 .Portfolio_item {
   height: 600px;
   width: 288px;
-  border: solid 1px black;
+  border: solid 1px var(--font-color);
   position: relative;
   left: 0px;
   flex-shrink: 0;
@@ -196,7 +203,7 @@
   box-sizing: border-box;
   background-position: -460px;
   background-size: cover;
-  color: white;
+  color: var(--font-color);
 
   p {
     font-size: 0.7em;
@@ -210,6 +217,7 @@
   align-items: center;
   flex-direction: column;
   align-items: flex-start;
+
 }
 
 .Portfolio_buttons{
@@ -293,7 +301,7 @@
 .Bar {
   width: 100%;
   height: 3px;
-  background-color: black;
+  background-color: var(--font-color);
 }
 
 .Skills {
@@ -330,7 +338,7 @@
   gap: 20px;
 
   a:visited {
-    color: black;
+    color: var(--font-color);
     text-decoration: none;
   }
   a:hover {
@@ -340,6 +348,10 @@
     text-decoration: underline;
     font-weight: 300;
     width: max-content;
+  }
+
+  a:visited{
+    color: var(--font-color);
   }
 }
 

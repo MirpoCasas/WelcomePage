@@ -1,3 +1,15 @@
+:root{
+  --background-color: #ffffff;
+  --font-color: #1E1E1E;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+[data-theme="dark"]{
+  --background-color: #1E1E1E;
+  --font-color: #E7E7E7;
+}
+
 body{
   margin: 0;
   padding: 0;

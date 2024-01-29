@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.scss";
-import selfie from "../public/mypic.jpg";
+import selfie from "../public/mypic.png";
 import { Bebas_Neue, Azeret_Mono } from "next/font/google";
 import { useState, useEffect } from "react";
 import Modal from "./assets/modal";
@@ -21,8 +21,9 @@ import typescriptpic from "@/public/techs/typescript-svgrepo-com.svg";
 import sasspic from "@/public/techs/sass-svgrepo-com.svg";
 import reactpic from "@/public/techs/react-svgrepo-com.svg";
 import nextjspic from "@/public/techs/next-js-svgrepo-com.svg";
-import translate from "@/public/translate.svg"
+import translate from "@/public/translate.svg";
 import pagecontent from "@/public/pagecontent.json";
+import darkTheme from "@/public/darkTheme.svg";
 import { useLangContext } from "./assets/langContext";
 import { useOverflowContext } from "./assets/overflowContext";
 
@@ -83,7 +84,6 @@ function PortfolioItem(props: PortfolioItemProps) {
             {props.techs.includes("react") && <Image className={styles.TechImg} src={reactpic} alt="react"></Image>}
             {props.techs.includes("sass") && <Image className={styles.TechImg} src={sasspic} alt="Sass"></Image>}
           </div>
-          <div className={styles.Portfolio_buttons}></div>
           {props.srccode && (
             <a target="_blank" rel="noopener noreferrer" href={props.srccode}>
               <button className={styles.Btn_portfolio}>Repo</button>
@@ -156,7 +156,7 @@ export default function Home() {
       maxHeight: "500px",
     },
     closed: {
-      maxHeight: "70px"
+      maxHeight: "70px",
     },
   };
 
@@ -171,10 +171,16 @@ export default function Home() {
   const { overflow, setOverflow } = useOverflowContext();
   const [loading, setLoading] = useState(false);
 
-  const handleClick = () => {
+  const handleClickLang = () => {
     setLoading(true);
-    setLang(lang === "en" ? 'es' : 'en')
-    setTimeout(() => setLoading(false), 1000); // hide after 2 seconds
+    setLang(lang === "en" ? "es" : "en");
+    setTimeout(() => setLoading(false), 500); // hide after 0.5 seconds
+  };
+  const handleClickTheme = () => {
+    const currentTheme = localStorage.getItem("theme");
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+    localStorage.setItem("theme", newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
   };
 
   function upIndex() {
@@ -252,11 +258,21 @@ export default function Home() {
     setOverflow(false);
   }
 
+  useEffect(() => {
+    const selectedTheme: string | null = localStorage.getItem("theme");
+    if (selectedTheme) {
+      document.documentElement.setAttribute("data-theme", selectedTheme);
+    }
+  }, []);
+
   return (
     <main className={`${styles.main} ${azert.className}`}>
-      <div className={styles.translatebutton} onClick={handleClick}>
+      <div className={styles.translatebutton}>
         <button>
-        <Image src={translate} alt='Change Language'></Image>
+          <Image src={translate} alt="Change Language" onClick={handleClickLang}></Image>
+        </button>
+        <button>
+          <Image src={darkTheme} alt="Theme Switch" onClick={handleClickTheme}></Image>
         </button>
         {loading && <div className={styles.spinner}></div>}
       </div>
@@ -273,7 +289,6 @@ export default function Home() {
         || OPEN TO: FULLSTACK - FRONT END - BACKEND || OPEN TO: FULLSTACK - FRONT END - BACKEND || OPEN TO: FULLSTACK - FRONT END - BACKEND || OPEN TO: FULLSTACK - FRONT END - BACKEND || OPEN TO:
         FULLSTACK - FRONT END - BACKEND || OPEN TO: FULLSTACK - FRONT END - BACKEND
       </p>
-
       <div className={styles.Preface}>
         <h2>{pageContent.Preface.Title}</h2>
         <div className={styles.Preface_content}>
