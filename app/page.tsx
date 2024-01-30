@@ -3,27 +3,34 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.scss";
-import selfie from "../public/mypic.png";
 import { Bebas_Neue, Azeret_Mono } from "next/font/google";
 import { useState, useEffect } from "react";
 import Modal from "./assets/modal";
-import Loader from "./assets/loader";
 import { motion } from "framer-motion";
-import navarrow from "../public/navarrow.svg";
-import catgif from "@/public/coding.gif";
-import byecat from "@/public/byecat.gif";
-import moviefin_ss from "@/public/moviefin_ss.png";
-import better_ss from "@/public/better_ss.png";
-import managym_ss from "@/public/managym_ss.png";
-import catonpc from "@/public/catonpc.gif";
+import catgif from "@/public/catgifs/coding.gif";
+import byecat from "@/public/catgifs/byecat.gif";
+import catonpc from "@/public/catgifs/catonpc.gif";
+import moviefin_ss from "@/public/screens/moviefin_ss.png";
+import better_ss from "@/public/screens/better_ss.png";
+import managym_ss from "@/public/screens/managym_ss.png";
+import fameflame_ss from "@/public/screens/fameflamescreen.png";
+import ludus_ss from "@/public/screens/ludusscreen.png";
+import nextinterview_ss from "@/public/screens/nextinterviewscreen.png";
 import javascriptpic from "@/public/techs/javascript-svgrepo-com.svg";
 import typescriptpic from "@/public/techs/typescript-svgrepo-com.svg";
 import sasspic from "@/public/techs/sass-svgrepo-com.svg";
 import reactpic from "@/public/techs/react-svgrepo-com.svg";
 import nextjspic from "@/public/techs/next-js-svgrepo-com.svg";
-import translate from "@/public/translate.svg";
+import csspic from "@/public/techs/cssIcon.svg";
+import htmlpic from "@/public/techs/htmlIcon.svg";
+import tailwindpic from "@/public/techs/tailwindIcon.svg";
+import zustandpic from "@/public/techs/zustandIcon.png";
+import reactquerypic from "@/public/techs/reactqueryIcon.png";
+import navarrow from "@/public/utils/navarrow.svg";
+import selfie from "@/public/mypic.png";
+import translate from "@/public/utils/translate.svg";
+import darkTheme from "@/public/utils/darkTheme.svg";
 import pagecontent from "@/public/pagecontent.json";
-import darkTheme from "@/public/darkTheme.svg";
 import { useLangContext } from "./assets/langContext";
 import { useOverflowContext } from "./assets/overflowContext";
 
@@ -83,6 +90,11 @@ function PortfolioItem(props: PortfolioItemProps) {
             {props.techs.includes("next") && <Image className={styles.TechImg} src={nextjspic} alt="Next JS"></Image>}
             {props.techs.includes("react") && <Image className={styles.TechImg} src={reactpic} alt="react"></Image>}
             {props.techs.includes("sass") && <Image className={styles.TechImg} src={sasspic} alt="Sass"></Image>}
+            {props.techs.includes("html") && <Image className={styles.TechImg} src={htmlpic} alt="HTML"></Image>}
+            {props.techs.includes("css") && <Image className={styles.TechImg} src={csspic} alt="CSS"></Image>}
+            {props.techs.includes("tailwind") && <Image className={styles.TechImg} src={tailwindpic} alt="Tailwind CSS"></Image>}
+            {props.techs.includes("zustand") && <Image className={styles.TechImg} src={zustandpic} alt="Zustand"></Image>}
+            {props.techs.includes("reactquery") && <Image className={styles.TechImg} src={reactquerypic} alt="React Query"></Image>}
           </div>
           {props.srccode && (
             <a target="_blank" rel="noopener noreferrer" href={props.srccode}>
@@ -111,6 +123,15 @@ export default function Home() {
     "3": {
       x: -680,
     },
+    "4": {
+      x: -1020,
+    },
+    "5": {
+      x: -1360,
+    },
+    6: {
+      x: -1700,
+    },
   };
   const carrouselleVariantsTab = {
     "1": {
@@ -122,6 +143,15 @@ export default function Home() {
     "3": {
       x: -1700,
     },
+    "4": {
+      x: -2550,
+    },
+    "5": {
+      x: -3400,
+    },
+    "6": {
+      x: -4250,
+    },
   };
   const carrouselleVariantsDesk = {
     "1": {
@@ -132,6 +162,15 @@ export default function Home() {
     },
     "3": {
       x: -2040,
+    },
+    "4": {
+      x: -3090,
+    },
+    "5": {
+      x: -4140,
+    },
+    6: {
+      x: -5190,
     },
   };
 
@@ -184,7 +223,7 @@ export default function Home() {
   };
 
   function upIndex() {
-    if (carrouselleIndex === 3) {
+    if (carrouselleIndex === 6) {
       return;
     }
     setCarrouselleIndex(carrouselleIndex + 1);
@@ -304,13 +343,36 @@ export default function Home() {
       <div className={styles.Portfolio}>
         <h2>Portfolio:</h2>
         <p>{pageContent.Portfolio.Desc}</p>
-        <p style={{ fontSize: ".5em" }}>{`${carrouselleIndex} / 3`}</p>
+        <p style={{ fontSize: ".5em" }}>{`${carrouselleIndex} / 6`}</p>
         <div className={styles.Portfolio_carrouselle}>
           <div className={styles.Portfolio_nav}>
             <Image src={navarrow} alt="nav arrow" style={{ rotate: "90deg" }} onClick={() => downIndex()}></Image>
             <Image src={navarrow} alt="nav arrow" style={{ rotate: "-90deg" }} onClick={() => upIndex()}></Image>
           </div>
           <motion.div className={styles.Portfolio_items} initial="1" animate={`${carrouselleIndex}`} variants={carrouselleVariants}>
+            <PortfolioItem
+              title={pageContent.Portfolio.Fourth.Title}
+              desc={pageContent.Portfolio.Fourth.Content}
+              deploy={"https://fameflame.io"}
+              img={fameflame_ss}
+              techs={["html", "css", "javascript"]}
+            />
+            <PortfolioItem
+              title={pageContent.Portfolio.Fifth.Title}
+              desc={pageContent.Portfolio.Fifth.Content}
+              srccode={"https://github.com/MirpoCasas/ludus"}
+              deploy={"https://ludus-sigma.vercel.app"}
+              img={ludus_ss}
+              techs={["react", "sass"]}
+            />
+            <PortfolioItem
+              title={pageContent.Portfolio.Sixth.Title}
+              desc={pageContent.Portfolio.Sixth.Content}
+              srccode={"https://github.com/MirpoCasas/nextinterview"}
+              deploy={"https://nextinterview.vercel.app"}
+              img={nextinterview_ss}
+              techs={["react", "sass"]}
+            />
             <PortfolioItem
               title={pageContent.Portfolio.First.Title}
               desc={pageContent.Portfolio.First.Content}

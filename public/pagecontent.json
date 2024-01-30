@@ -19,6 +19,18 @@
       "Third": {
         "Title": "BetterDesigns",
         "Content": "This is a concept Website I made for promoting my services as a web developer / designer."
+      },
+      "Fourth": {
+        "Title": "FameFlame",
+        "Content": "This website was made for promoting the services of selling boosts on social media that an API resells."
+      },
+      "Fifth": {
+        "Title": "Ludus",
+        "Content": "This is a project in progress for storing and showing the company's publications and texts. It's made integrating Stapi as a CMS with NextJS as a framework"
+      },
+      "Sixth": {
+        "Title": "Movie Search React Querry",
+        "Content": "This was a technical challenged that required fetching the data with React Querry and storing it with Zustand to keep the data on page refresh. Also uses Shadcn components and TailwindCSS for styling."
       }
     },
     "Experiences": {
@@ -70,6 +82,18 @@
       "Third": {
         "Title": "BetterDesigns",
         "Content": "Esta es una página web conceptual que hice para promocionar mis servicios como desarrollador / diseñador web."
+      },
+      "Fourth": {
+        "Title": "FameFlame",
+        "Content": "Esta página web fue hecha para promocionar los servicios de venta de boosts en redes sociales que revende una API."
+      },
+      "Fifth": {
+        "Title": "Ludus",
+        "Content": "Este es un proyecto en proceso para almacenar y mostrar las publicaciones y textos de la compania. Esta hecha integrando Stapi como CMS con NextJS como framework"
+      },
+      "Sixth": {
+        "Title": "Movie Search React Querry",
+        "Content": "Este fue un desafío técnico que requería obtener los datos con React Querry y almacenarlos con Zustand para mantener los datos al actualizar la página. También usa componentes de Shadcn y TailwindCSS para el estilo."
       }
     },
     "Experiences": {
