@@ -17,6 +17,7 @@
     height: 50px;
     outline: none;
     border: none;
+    cursor: pointer;
   }
   img {
     width: 100%;
@@ -35,6 +36,7 @@
       filter: invert(1);
     }
   }
+
 }
 
 .spinner {
@@ -72,6 +74,7 @@
   border-radius: 5px;
   font-size: 0.7em;
   color: var(--font-color);
+  cursor: pointer;
 }
 
 .Header {
@@ -150,6 +153,7 @@
   button {
     align-self: center;
     margin: 20px;
+    cursor: pointer;
   }
 }
 
@@ -188,6 +192,7 @@
   img {
     background-color: grey;
     pointer-events: all;
+    cursor: pointer;
   }
 }
 
