@@ -431,6 +431,15 @@ export default function Home() {
           <p>-SQL</p>
           <p>-MySQL</p>
           <p>-MongoDB</p>
+          <p>-Tailwind CSS</p>
+          <p>-SASS</p>
+          <p>-Zustand</p>
+          <p>-React Query</p>
+          <p>-Jest</p>
+          <p>-Cypress</p>
+          <p>-React Testing Library</p>
+          <p>-StrapiCMS</p>
+          <p>-Figma</p>
         </div>
       </div>
       <div className={styles.Contact}>
