@@ -299,7 +299,10 @@ export default function Home() {
 
   useEffect(() => {
     const selectedTheme: string | null = localStorage.getItem("theme");
-    if (selectedTheme) {
+    console.log(selectedTheme , "selectedTheme");
+    if (!selectedTheme) {
+      document.documentElement.setAttribute("data-theme", "light");
+    } else {
       document.documentElement.setAttribute("data-theme", selectedTheme);
     }
   }, []);
