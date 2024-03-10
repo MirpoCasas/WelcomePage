@@ -20,11 +20,9 @@ export default function Loader({}) {
 
 
   function closeLoader(idiom : "es" | "en") {
-    console.log(idiom)
     setLang(idiom);
     setAnimationState("hidden");
     setTimeout(() => {
-      console.log('closing loader')
       setIsOpen(false);
       setOverflow(false);
     }, 1300);
