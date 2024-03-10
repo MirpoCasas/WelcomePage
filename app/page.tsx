@@ -216,8 +216,9 @@ export default function Home() {
     setTimeout(() => setLoading(false), 500); // hide after 0.5 seconds
   };
   const handleClickTheme = () => {
-    const currentTheme = localStorage.getItem("theme");
-    const newTheme = currentTheme === "light" ? "dark" : "light";
+    let currentTheme = localStorage.getItem("theme");
+    if (!currentTheme) currentTheme = "light";
+    const newTheme = currentTheme === "light"  ? "dark" : "light";
     localStorage.setItem("theme", newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
   };
@@ -237,7 +238,6 @@ export default function Home() {
   }
 
   function handleResize() {
-    console.log("resize");
 
     setDimmensions([window.innerWidth, window.innerHeight]);
     if (window.innerWidth > 1500) {
@@ -299,7 +299,6 @@ export default function Home() {
 
   useEffect(() => {
     const selectedTheme: string | null = localStorage.getItem("theme");
-    console.log(selectedTheme , "selectedTheme");
     if (!selectedTheme) {
       document.documentElement.setAttribute("data-theme", "light");
     } else {
