@@ -363,7 +363,7 @@ export default function Home() {
               title={pageContent.Portfolio.Fifth.Title}
               desc={pageContent.Portfolio.Fifth.Content}
               srccode={"https://github.com/MirpoCasas/ludus"}
-              deploy={"www.ludushouse.com"}
+              deploy={"https://www.ludushouse.com"}
               img={ludus_ss}
               techs={["react", "sass"]}
             />
